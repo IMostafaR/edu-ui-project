@@ -49,6 +49,45 @@ This project is a collaborative effort by the following contributors:
 
 ---
 
+## Website Navigation Analysis
+
+This project includes a detailed navigation system for an educational website. The navigation flow ensures smooth transitions between pages and provides an intuitive user experience.
+
+### Navigation Structure
+
+- **Home (Page 1):**
+  - Acts as the landing page.
+  - Provides links to all key sections of the website.
+- **Courses (Page 2):**
+
+  - Displays a list of available courses.
+  - Clicking on any course card navigates to:
+    - **Course Details (Page 3):** Contains more information about the selected course.
+
+- **Pages:**
+  - **About (Page 4):** Provides information about the platform.
+  - **Teacher (Page 5):** Lists all teachers.
+    - Clicking on a teacher card navigates to:
+      - **Teacher Details (Page 6):** Displays details about the selected teacher.
+  - **Price (Page 7):** Lists pricing plans for courses.
+  - **Signup (Page 8):** Allows users to register for the platform.
+- **Blog (Page 9):**
+
+  - Displays a list of blog posts.
+  - Clicking on a blog card navigates to:
+    - **Blog Details (Page 10):** Shows the full content of the selected blog.
+
+- **Contact (Page 11):**
+  - Provides a contact form and details to reach out to the platform.
+
+### Visual Navigation Map
+
+Below is a visual representation of the website navigation:
+
+![Website Navigation](/assets/images/ui/Site-map.jpg)
+
+---
+
 ## Setting Up the Project
 
 1. Clone the repository:
