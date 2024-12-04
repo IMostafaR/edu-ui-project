@@ -80,7 +80,7 @@ Each team member must create their own branch from working branch such as `level
 #### Branch Naming Convention
 
 Use the format:
-`level-1/<name>/<feature-or-task>`
+`<level-number>/<name>/<feature-or-task>`
 
 Examples:
 
@@ -91,13 +91,13 @@ Examples:
 #### Creating and Switching to Your Branch
 
 ```bash
-git checkout -b level-1-html-css-js/<name>/<feature-or-task>
+git checkout -b <level-number>/<name>/<feature-or-task>
 ```
 
 Example:
 
 ```bash
-git checkout -b level-1-html-css-js/ahmed-mostafa/course-page
+git checkout -b level-1/ahmed-mostafa/course-page
 ```
 
 ### **6. Working on Your Branch**
@@ -111,7 +111,7 @@ Once your task is complete:
 1. Push your branch to GitHub:
 
 ```bash
-git push origin level-1-html-css-js/<name>/<feature-or-task>
+git push origin <level-number>/<name>/<feature-or-task>
 ```
 
 2. On GitHub, create a Pull Request (PR) to merge your branch into the working branch such as `level-1-html-css-js`.
