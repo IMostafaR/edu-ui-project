@@ -1,7 +1,3 @@
-body {
-  height: 10000px;
-}
-
 .navbar {
   transition: box-shadow 0.3s ease-in-out;
   -webkit-transition: box-shadow 0.3s ease-in-out;
