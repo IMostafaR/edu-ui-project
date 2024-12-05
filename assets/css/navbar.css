@@ -1,0 +1,37 @@
+body {
+  height: 10000px;
+}
+
+.navbar {
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+}
+
+header nav button.bg-blue:hover {
+  background-color: var(--main-blue);
+}
+
+header nav a.navbar-brand::after {
+  position: absolute;
+  content: "";
+  right: -25px;
+  background-color: #dbdbdb;
+  width: 1px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  header nav a.navbar-brand::after {
+    display: none;
+  }
+}
+
+header nav form .input-group input.form-control {
+  padding: 0.7rem;
+}
+header nav form .input-group {
+  min-width: 300px;
+}
