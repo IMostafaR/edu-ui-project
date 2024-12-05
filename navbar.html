@@ -74,12 +74,22 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 mb-3 mb-xl-auto w-auto"
-                type="search"
-                placeholder="Search Item"
-                aria-label="Search"
-              />
+              <div class="input-group me-2 mb-3 mb-xl-auto w-auto">
+                <input
+                  type="search"
+                  class="form-control bg-gray border-0"
+                  placeholder="Search Item"
+                  aria-label="Search"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="bg-gray input-group-text border-0"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
             </form>
             <button class="btn py-2 px-3 bg-blue fw-bold w-auto">
               <a class="text-white text-decoration-none" href="signup.html"

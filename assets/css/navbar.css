@@ -28,3 +28,10 @@ header nav a.navbar-brand::after {
     display: none;
   }
 }
+
+header nav form .input-group input.form-control {
+  padding: 0.7rem;
+}
+header nav form .input-group {
+  min-width: 300px;
+}

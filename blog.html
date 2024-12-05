@@ -11,13 +11,102 @@
     <!-- MAIN STYLESHEET FILE (DO NOT DELETE) -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- YOUR CSS FILE -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/blog.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-xl fixed-top fw-bold">
+        <div class="container py-3">
+          <a class="navbar-brand position-relative" href="home.html"
+            ><img src="assets/images/logo/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-xl-4">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item pe-xl-4">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="course.html"
+                  >Courses</a
+                >
+              </li>
+              <li class="nav-item pe-xl-4">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="teachers.html"
+                  >Teachers</a
+                >
+              </li>
+              <li class="nav-item pe-xl-4">
+                <a class="nav-link active" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item pe-xl-4">
+                <a class="nav-link active" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item pe-xl-4">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group me-2 mb-3 mb-xl-auto w-auto">
+                <input
+                  type="search"
+                  class="form-control bg-gray border-0"
+                  placeholder="Search Item"
+                  aria-label="Search"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="bg-gray input-group-text border-0"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+            <button class="btn py-2 px-3 bg-blue fw-bold w-auto">
+              <a class="text-white text-decoration-none" href="signup.html"
+                >Enroll Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- J A V A S C R I P T -->
     <!-- fONT-AWESOME -->
     <script src="assets/js/libs/all.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>
