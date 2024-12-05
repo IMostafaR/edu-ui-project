@@ -8,4 +8,8 @@ header nav button.bg-blue:hover {
 
 .navbar {
   transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
 }
