@@ -84,3 +84,7 @@ body {
   -ms-border-radius: var(--button-border-radius);
   -o-border-radius: var(--button-border-radius);
 }
+
+.pt-120 {
+  padding-top: 120px;
+}
