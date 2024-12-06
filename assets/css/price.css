@@ -1,0 +1,24 @@
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .price {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .text-muted s {
+    color: #aaa;
+  }
+  
+  .badge {
+    font-size: 12px;
+  }
+  .box{
+    background-color: var(--secondary-gray);
+  }
