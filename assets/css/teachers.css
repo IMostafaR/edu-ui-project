@@ -40,3 +40,16 @@ section div.instructor img.position-absolute {
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
+
+.main-footer {
+  height: 700px;
+}
+
+.download-app {
+  height: 100%;
+  margin-bottom: -120px;
+}
+
+footer .download-app span {
+  border-left: 3px solid var(--main-red);
+}
