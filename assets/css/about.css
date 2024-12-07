@@ -1,0 +1,9 @@
+.blogs .title h2 {
+  font-size: 3rem;
+}
+
+.blogs .title img.position-absolute {
+  top: 60px;
+  right: 1px;
+  width: calc(100% - 2px);
+}
