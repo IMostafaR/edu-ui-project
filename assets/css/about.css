@@ -7,3 +7,11 @@
   right: 1px;
   width: calc(100% - 2px);
 }
+
+.learning span.free {
+  border-left: 3px solid var(--main-red);
+}
+
+.learning a:hover {
+  background-color: var(--main-blue);
+}
