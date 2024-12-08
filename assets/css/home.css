@@ -16,6 +16,10 @@ section.home-banner .banner-img img.position-absolute {
   width: 50%;
 }
 
+section.blogs span.our-blog {
+  border-top: 3px solid var(--main-red);
+}
+
 /* *, ::before, ::after {
     box-sizing: border-box;
 }
