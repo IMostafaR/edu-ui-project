@@ -1,13 +1,39 @@
-## Team Members and Contributors
+## Level-1 HTML, CSS, JS Contributions
 
-This project is a collaborative effort by the following contributors:
+### Collaborative Contributions
 
-1. Ahmed Mostafa Saleh
-2. Ahmed Mohamed Kassem
-3. Omar Elsayed Elfar
-4. Mostafa Ragab Fathi
-5. Rahem Salah
-6. Yasmine Ahmed Moussa
+All team members participated in:
+
+- Group discussions for planning and task allocation
+- One-on-one discussions for pull request (PR) reviews
+- Resolving merge conflicts locally during development
+
+### Individual Responsibilities
+
+- **Ahmed Mostafa Saleh**
+
+  - Page 6, Page 7, and one section of Page 1 (Landing Page)
+
+- **Ahmed Mohamed Kassem**
+
+  - Page 3 and Page 11 _(still under development)_
+
+- **Omar Elsayed Elfar**
+
+  - Page 10 _(still under development)_
+
+- **Mostafa Ragab Fathi**
+
+  - Page 4, Page 5, Page 9
+  - Shared components: Navbar, Footer, and Hero Section
+  - Repository Management: Handling GitHub repository, resolving merge conflicts, code reviews, and managing reusable sections across pages
+
+- **Rahem Salah**
+
+  - Page 8 _(still under development)_
+
+- **Yasmine Ahmed Moussa**
+  - Page 1 (Landing Page) and Page 2
 
 ---
 
