@@ -2,7 +2,8 @@
   margin-top: 102px;
 }
 
-section.home-banner .content span {
+section.home-banner .content span,
+.categories span {
   border-left: 3px solid var(--main-red);
 }
 
