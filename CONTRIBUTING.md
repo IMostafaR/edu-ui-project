@@ -30,7 +30,7 @@ All team members participated in:
 
 - **Rahem Salah**
 
-  - Page 8 _(still under development)_
+  - Page 8
 
 - **Yasmine Ahmed Moussa**
   - Page 1 (Landing Page) and Page 2
