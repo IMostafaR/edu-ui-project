@@ -3,7 +3,8 @@
 }
 
 section.home-banner .content span,
-.categories span {
+.categories span,
+section.events span.events {
   border-left: 3px solid var(--main-red);
 }
 
