@@ -88,3 +88,7 @@ body {
 .pt-120 {
   padding-top: 120px;
 }
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
