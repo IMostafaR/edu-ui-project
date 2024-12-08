@@ -1,4 +1,21 @@
-*, ::before, ::after {
+.home-banner {
+  margin-top: 102px;
+}
+
+section.home-banner .content span {
+  border-left: 3px solid var(--main-red);
+}
+
+section.home-banner .content h1 {
+  font-size: 4.5rem;
+}
+
+section.home-banner .banner-img img.position-absolute {
+  bottom: 110px;
+  width: 50%;
+}
+
+/* *, ::before, ::after {
     box-sizing: border-box;
 }
 
@@ -569,4 +586,4 @@ hr{
 .stats-label {
     font-size: 1rem;
     color: #666;
-}
+} */
