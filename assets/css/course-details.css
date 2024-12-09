@@ -1,0 +1,85 @@
+.main-white {
+    background-color: #fff;
+}
+
+.Course_contant {
+
+    margin-top: -4rem;
+}
+
+.course_Teacher span {
+    color: rgba(30, 30, 30, 0.7);
+}
+
+.author-info h5,
+.course_category h5 {
+    font-size: 14px;
+}
+
+.course_rating::before,
+.course_category::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 75%;
+    width: 1px;
+    background: rgba(4, 0, 23, 0.14);
+    z-index: 1;
+}
+
+.course_Img {
+    z-index: -1;
+}
+
+.course_Img img {
+    max-width: 100%;
+}
+
+.course_details {
+    padding: 50px 0;
+}
+
+.price {
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.price h3 {
+    font-size: 50px;
+}
+
+.courseUl li {
+    border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+    font-weight: 500;
+    padding: 10px 40px;
+    color: rgba(30, 30, 30, 0.7);
+}
+
+.text_gray_opacity {
+    color: rgba(30, 30, 30, 0.7);
+}
+
+.nav {
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.nav-item {
+    width: 25%;
+}
+
+.nav-item .active {
+    color: #1e1e1e;
+    background-color: #fff;
+    border-top: 2px solid #1268eb;
+}
+
+.nav-item button {
+    background: #F5F5F5;
+    height: 55px;
+    border: 1px solid rgba(30, 30, 30, 0.1);
+    gap: 10px;
+    width: 100%;
+    color: var(--clr-body-heading);
+}
