@@ -16,7 +16,7 @@ All team members participated in:
 
 - **Ahmed Mohamed Kassem**
 
-  - Page 3 and Page 11 _(still under development)_
+  - Page 3 and Page 11
 
 - **Omar Elsayed Elfar**
 
