@@ -1,0 +1,98 @@
+.tex-gray {
+    color: rgba(30, 30, 30, 0.3)
+}
+
+.contact-body {
+    padding: 80px 80px 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(30, 30, 30, 0.1);
+    position: relative;
+}
+
+.contact-content {
+    border-right: 1px solid rgba(4, 0, 23, 0.14);
+}
+
+.contact-title {
+    font-size: 34px;
+}
+
+.contact-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.contact-input input,
+.form-select {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 100%;
+
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-input span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.textarea_Icon {
+    top: 0% !important;
+    transform: translateY(0%) !important;
+}
+
+.contact-item a,
+p {
+    font-size: 16px;
+    display: block;
+    color: var(--clr-body-heading);
+    font-weight: 500;
+}
+
+.contact-social ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+}
+
+.contact-social ul li {
+    list-style: none;
+}
+
+.contact-social ul li a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(30, 30, 30, 0.1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: rgba(30, 30, 30, 0.3);
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+
+.contact-social ul li a:hover {
+    background-color: blue;
+    color: #FFFFFF;
+}
+
+.map {
+    margin-top: -8rem;
+}
