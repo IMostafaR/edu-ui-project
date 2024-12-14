@@ -17,7 +17,6 @@ section div.instructor img.position-absolute {
 }
 
 .teacher-info {
-  /* background-color: var(--star-yellow); */
   opacity: 0;
   transform: translateY(4%);
   -webkit-transform: translateY(4%);
