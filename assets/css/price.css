@@ -17,7 +17,7 @@
   background-color: var(--secondary-gray);
 }
 
-section.price button:hover {
+section.price a:hover {
   background-color: var(--main-blue);
   color: #fff;
 }
