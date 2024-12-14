@@ -9,7 +9,7 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css" />
     <!-- MAIN STYLESHEET FILE (DO NOT DELETE) -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
     <!-- YOUR CSS FILE -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/header-banner.css" />
@@ -133,31 +133,35 @@
     <!-- Featured Courses -->
     <section class="pt-120">
       <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-between mb-5"
-        >
-          <p class="tx-gray fw-bold">Showing 1-8 of 24 results</p>
-          <div>
-            <form class="d-flex" role="search">
-              <div
-                class="input-group course-seearch me-2 mb-3 mb-xl-auto w-auto"
-              >
-                <input
-                  type="search"
-                  class="form-control bg-gray border-0 course-seearch"
-                  placeholder="Search Item"
-                  aria-label="Search"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="bg-gray input-group-text border-0"
-                  type="button"
-                  id="button-addon2"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+        <div class="row">
+          <div class="col">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-between mb-5"
+            >
+              <p class="tx-gray fw-bold">Showing 1-8 of 24 results</p>
+              <div>
+                <form class="d-flex" role="search">
+                  <div
+                    class="input-group course-seearch me-2 mb-3 mb-xl-auto w-auto"
+                  >
+                    <input
+                      type="search"
+                      class="form-control bg-gray border-0 course-seearch"
+                      placeholder="Search Item"
+                      aria-label="Search"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="bg-gray input-group-text border-0"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
 
@@ -516,31 +520,35 @@
           </div>
         </div>
 
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link tx-gray" href="#">Previous</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link tx-gray" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link tx-gray" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link tx-gray" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link tx-gray" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="row">
+          <div class="col">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link tx-gray" href="#">Previous</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link tx-gray" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link tx-gray" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link tx-gray" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link tx-gray" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="pt-120">
-      <section class="container download-app">
+      <div class="container download-app">
         <div
           class="bg-blue position-relative box-shadow box-radius p-5 align-items-center"
         >
@@ -576,8 +584,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="main-footer bg-purple pt-120">
+      </div>
+      <div class="main-footer bg-purple pt-120">
         <div class="footer-content pt-120 container pb-5">
           <div class="row justify-content-between">
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
@@ -703,7 +711,7 @@
             Copyright &#169; 2023 All Rights Reserved by Eduan
           </p>
         </div>
-      </section>
+      </div>
     </footer>
     <!-- J A V A S C R I P T -->
     <!-- fONT-AWESOME -->

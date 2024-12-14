@@ -9,7 +9,7 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css" />
     <!-- MAIN STYLESHEET FILE (DO NOT DELETE) -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
     <!-- YOUR CSS FILE -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/header-banner.css" />
@@ -130,61 +130,90 @@
       />
     </section>
 
+    <!-- Card Form -->
 
-     <!-- Card Form -->
-
-     <div class="form-container">
+    <div class="form-container">
       <div class="tabs">
         <div class="tab-link active" id="tab-signup">Sign Up</div>
         <div class="tab-link" id="tab-signin">Sign In</div>
       </div>
-      <h2 class="form-header">Sign in to Your Account      <span>👋</span></h2>
+      <h2 class="form-header">Sign in to Your Account <span>👋</span></h2>
       <form id="form-signup">
         <div class="mb-3">
           <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstName" placeholder="First Name">
-          <div class="error-msg" id="error-firstName">First name is required.</div>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <div class="error-msg" id="error-firstName">
+            First name is required.
+          </div>
         </div>
         <div class="mb-3">
           <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-          <div class="error-msg" id="error-lastName">Last name is required.</div>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <div class="error-msg" id="error-lastName">
+            Last name is required.
+          </div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
-          <div class="error-msg" id="error-email">Please enter a valid email.</div>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter Your Email"
+          />
+          <div class="error-msg" id="error-email">
+            Please enter a valid email.
+          </div>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Your Password</label>
           <div class="input-group">
-            <input type="password" class="form-control" id="password" placeholder="Password">
-            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="togglePassword"
+            >
               <i id="password-icon" class="bi bi-eye"></i>
-            </button>         
-           </div>
-           <div class="error-msg" id="error-password">Password is required.</div>
+            </button>
+          </div>
+          <div class="error-msg" id="error-password">Password is required.</div>
           <div class="text-end mt-1">
             <a href="#" class="text-muted">Forgot Password?</a>
           </div>
         </div>
         <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" id="rememberMe">
+          <input class="form-check-input" type="checkbox" id="rememberMe" />
           <label class="form-check-label" for="rememberMe">Remember Me</label>
         </div>
         <button type="submit" class="btn btn-primary w-100">Sign Up</button>
-        
 
         <div class="text-center my-3">OR</div>
         <div class="d-flex w-full justify-content-center gap-2">
           <button class="btn btn-light btn-social">
-            <img src="assets/images/page-8/google.png" alt="Google"> Google
+            <img src="assets/images/page-8/google.png" alt="Google" /> Google
           </button>
           <button class="btn btn-light btn-social">
-            <img src="assets/images/page-8/apple.png" alt="Apple"> Apple
+            <img src="assets/images/page-8/apple.png" alt="Apple" /> Apple
           </button>
           <button class="btn btn-light btn-social">
-            <img src="assets/images/page-8/facebook.png" alt="Facebook"> Facebook
+            <img src="assets/images/page-8/facebook.png" alt="Facebook" />
+            Facebook
           </button>
         </div>
         <div class="form-footer">
@@ -195,7 +224,7 @@
 
     <!-- Footer -->
     <footer class="pt-120">
-      <section class="container download-app">
+      <div class="container download-app">
         <div
           class="bg-blue position-relative box-shadow box-radius p-5 align-items-center"
         >
@@ -231,8 +260,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="main-footer bg-purple pt-120">
+      </div>
+      <div class="main-footer bg-purple pt-120">
         <div class="footer-content pt-120 container pb-5">
           <div class="row justify-content-between">
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
@@ -358,7 +387,7 @@
             Copyright &#169; 2023 All Rights Reserved by Eduan
           </p>
         </div>
-      </section>
+      </div>
     </footer>
     <!-- J A V A S C R I P T -->
     <!-- fONT-AWESOME -->

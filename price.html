@@ -9,7 +9,7 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css" />
     <!-- MAIN STYLESHEET FILE (DO NOT DELETE) -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
     <!-- YOUR CSS FILE -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/header-banner.css" />
@@ -132,85 +132,137 @@
 
     <!-- Price -->
 
-    <div class="container my-5 pt-120">
-      <div class="row text-center g-5">
-        <div class="col-md-4">
-          <div class="box card shadow-sm p-3">
-            <h4 class="card-title">Standard</h4>
-            <p class="text-muted"><s>$24.00</s></p>
-            <h2 class="price">$22 <span class="fs-5">Per Month</span></h2>
-            <p class="text-muted">
-              Discounted Price For USA <br />
-              Per User, billed annually
-            </p>
-            <button class="btn btn-outline-primary w-100">Enroll Now</button>
-            <p class="mt-2">
-              <a href="#" class="text-primary">Choose 2 - year plan</a>
-              <span class="badge bg-danger">Save 6%</span>
-            </p>
-            <ul class="list-unstyled text-start mt-3">
-              <li>&bull; Facilizes sed odic morbid quiz.</li>
-              <li>&bull; Design nexus et malasadas fames brand.</li>
-              <li>&bull; Artistic mind will be great for creation.</li>
-              <li>&bull; Roadmap for business agency arbitrator.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box card shadow-sm p-3 border-danger">
-            <h4 class="card-title position-relative">
-              Professional
-              <span class="badge bg-danger position-absolute top-0 end-0"
-                >Most Popular</span
+    <section class="pt-120 price">
+      <div class="container">
+        <div class="row text-center g-5">
+          <div class="col-md-4">
+            <div class="box card border-0 p-5">
+              <h4 class="card-title">Standard</h4>
+              <p class="text-muted"><s>$24.00</s></p>
+              <div
+                class="pricing d-flex justify-content-center gap-2 align-items-end"
               >
-            </h4>
-            <p class="text-muted"><s>$36.00</s></p>
-            <h2 class="price">$28 <span class="fs-5">Per Month</span></h2>
-            <p class="text-muted">
-              Discounted Price For USA <br />
-              Per User, billed annually
-            </p>
-            <button class="btn btn-outline-primary w-100">Enroll Now</button>
-            <p class="mt-2">
-              <a href="#" class="text-primary">Choose 2 - year plan</a>
-              <span class="badge bg-danger">Save 24%</span>
-            </p>
-            <ul class="list-unstyled text-start mt-3">
-              <li>&bull; Facilizes sed odic morbid quiz.</li>
-              <li>&bull; Design nexus et malasadas fames brand.</li>
-              <li>&bull; Artistic mind will be great for creation.</li>
-              <li>&bull; Roadmap for business agency arbitrator.</li>
-            </ul>
+                <h2 class="fw-bold">$22</h2>
+                <p class="text-start fw-bold">
+                  Per <br />
+                  Month
+                </p>
+              </div>
+
+              <p class="text-muted">
+                Discounted Price For USA <br />
+                Per User, billed annually
+              </p>
+              <a
+                href="signup.html"
+                class="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+              >
+                Enroll Now
+              </a>
+              <p class="mt-2">
+                <a href="#" class="tx-black me-2">Choose 2 - year plan</a>
+                <span
+                  class="badge bg-danger-subtle tx-red border-1 border px-2 p-1"
+                  >Save 6%</span
+                >
+              </p>
+              <ul class="list-unstyled text-start mt-3 text-muted">
+                <li>&bull; Facilizes sed odic morbid quiz.</li>
+                <li>&bull; Design nexus et malasadas fames brand.</li>
+                <li>&bull; Artistic mind will be great for creation.</li>
+                <li>&bull; Roadmap for business agency arbitrator.</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box card shadow-sm p-3">
-            <h4 class="card-title">Business</h4>
-            <p class="text-muted"><s>$74.00</s></p>
-            <h2 class="price">$56 <span class="fs-5">Per Month</span></h2>
-            <p class="text-muted">
-              Discounted Price For USA <br />
-              Per User, billed annually
-            </p>
-            <button class="btn btn-outline-primary w-100">Enroll Now</button>
-            <p class="mt-2">
-              <a href="#" class="text-primary">Choose 2 - year plan</a>
-              <span class="badge bg-danger">Save 12%</span>
-            </p>
-            <ul class="list-unstyled text-start mt-3">
-              <li>&bull; Facilizes sed odic morbid quiz.</li>
-              <li>&bull; Design nexus et malasadas fames brand.</li>
-              <li>&bull; Artistic mind will be great for creation.</li>
-              <li>&bull; Roadmap for business agency arbitrator.</li>
-            </ul>
+          <div class="col-md-4">
+            <div class="box card p-5 border-0 position-relative">
+              <h4 class="card-title">
+                Professional
+                <span
+                  class="badge bg-danger position-absolute top-0 end-0 px-3 py-2 rounded-0 rounded-top-1 fs-6"
+                  >Most Popular</span
+                >
+              </h4>
+              <p class="text-muted"><s>$36.00</s></p>
+              <div
+                class="pricing d-flex justify-content-center gap-2 align-items-end"
+              >
+                <h2 class="fw-bold">$22</h2>
+                <p class="text-start fw-bold">
+                  Per <br />
+                  Month
+                </p>
+              </div>
+              <p class="text-muted">
+                Discounted Price For USA <br />
+                Per User, billed annually
+              </p>
+              <a
+                href="signup.html"
+                class="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+              >
+                Enroll Now
+              </a>
+              <p class="mt-2">
+                <a href="#" class="tx-black me-2">Choose 2 - year plan</a>
+                <span
+                  class="badge bg-danger-subtle tx-red border-1 border px-2 p-1"
+                  >Save 24%</span
+                >
+              </p>
+              <ul class="list-unstyled text-start mt-3 text-muted">
+                <li>&bull; Facilizes sed odic morbid quiz.</li>
+                <li>&bull; Design nexus et malasadas fames brand.</li>
+                <li>&bull; Artistic mind will be great for creation.</li>
+                <li>&bull; Roadmap for business agency arbitrator.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box card border-0 p-5">
+              <h4 class="card-title">Business</h4>
+              <p class="text-muted"><s>$74.00</s></p>
+              <div
+                class="pricing d-flex justify-content-center gap-2 align-items-end"
+              >
+                <h2 class="fw-bold">$22</h2>
+                <p class="text-start fw-bold">
+                  Per <br />
+                  Month
+                </p>
+              </div>
+              <p class="text-muted">
+                Discounted Price For USA <br />
+                Per User, billed annually
+              </p>
+              <a
+                href="signup.html"
+                class="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+              >
+                Enroll Now
+              </a>
+              <p class="mt-2">
+                <a href="#" class="tx-black me-2">Choose 2 - year plan</a>
+                <span
+                  class="badge bg-danger-subtle tx-red border-1 border px-2 p-1"
+                  >Save 12%</span
+                >
+              </p>
+              <ul class="list-unstyled text-start mt-3 text-muted">
+                <li>&bull; Facilizes sed odic morbid quiz.</li>
+                <li>&bull; Design nexus et malasadas fames brand.</li>
+                <li>&bull; Artistic mind will be great for creation.</li>
+                <li>&bull; Roadmap for business agency arbitrator.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="pt-120">
-      <section class="container download-app">
+      <div class="container download-app">
         <div
           class="bg-blue position-relative box-shadow box-radius p-5 align-items-center"
         >
@@ -246,8 +298,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="main-footer bg-purple pt-120">
+      </div>
+      <div class="main-footer bg-purple pt-120">
         <div class="footer-content pt-120 container pb-5">
           <div class="row justify-content-between">
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
@@ -373,7 +425,7 @@
             Copyright &#169; 2023 All Rights Reserved by Eduan
           </p>
         </div>
-      </section>
+      </div>
     </footer>
 
     <!-- J A V A S C R I P T -->
