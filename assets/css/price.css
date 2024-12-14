@@ -1,23 +1,9 @@
 .card {
   border-radius: 10px;
-  transition: transform 0.3s ease;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-
-.price {
-  color: #000;
-  font-weight: bold;
 }
 
 .text-muted s {
@@ -29,4 +15,18 @@
 }
 .box {
   background-color: var(--secondary-gray);
+}
+
+section.price button:hover {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.pricing h2 {
+  font-size: 3rem;
+}
+
+.pricing p {
+  line-height: normal;
+  font-size: 1rem;
 }
