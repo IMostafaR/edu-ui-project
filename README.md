@@ -1,4 +1,71 @@
-# Education Website UI Project
+# Education Website UI Project (Vite + React App)
+
+## Getting Started
+
+Follow the steps below to set up and run the project locally:
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js**
+- **npm** (comes with Node.js) or **yarn**
+
+---
+
+### Installation
+
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/IMostafaR/edu-ui-project.git
+    ```
+
+2.  **Navigate to the Project Directory:**
+
+    ```bash
+    cd edu-ui-project
+    ```
+
+3.  **Switch to the desired branch to start development:**
+
+    ```bash
+    git checkout level-2-react
+    ```
+
+4.  **Install Dependencies: Using npm:**
+
+    ```bash
+    npm install
+    ```
+
+    **Or using yarn:**
+
+    ```bash
+    yarn
+    ```
+
+---
+
+### Installation
+
+To run the project in development mode:
+
+```bash
+npm run dev
+```
+
+or
+
+```bash
+yarn dev
+```
+
+Open your browser and navigate to the link displayed in the terminal (usually [http://localhost:5173](http://localhost:5173)).
+
+---
+
+## About the Project
 
 This repository hosts the collaborative project for building an Education Website UI. It is part of the frontend web development bootcamp organized by **Caree180** in partnership with **Learnit**. The project will evolve through three levels, utilizing different technologies.
 
@@ -16,7 +83,6 @@ The project is divided into three development levels, each focusing on a specifi
 ### Level 2: React.js
 
 - Enhance the UI with dynamic, component-based architecture using React.js.
-
 
 ### Level 3: Next.js
 
@@ -70,24 +136,3 @@ This project is part of the Frontend Web Development Bootcamp, hosted by Caree18
 ## License
 
 This project is licensed under the MIT License.
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-
-
-
-
-
-
-
-- npm install 
-- npm run dev 
