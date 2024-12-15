@@ -29,7 +29,7 @@ const Home = () => {
                 </p>
                 <Link
                   className="btn bg-blue text-white fw-bold px-4 py-3"
-                  to="courses"
+                  to="/courses"
                 >
                   View All Course
                 </Link>
@@ -121,7 +121,7 @@ const Home = () => {
               <div className="row row-cols-1 row-cols-md-4 g-4">
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="courses">
+                    <Link to="/courses">
                       <img
                         src={images.pageOne.categoryOne}
                         className="card-img-top"
@@ -131,7 +131,7 @@ const Home = () => {
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Digital Marketing</h5>
                       <Link
-                        to="courses"
+                        to="/courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         26 Items
@@ -142,7 +142,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="courses">
+                    <Link to="/courses">
                       <img
                         src={images.pageOne.categoryTwo}
                         className="card-img-top"
@@ -152,7 +152,7 @@ const Home = () => {
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Graphic Design</h5>
                       <Link
-                        to="courses"
+                        to="/courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         78 Items
@@ -163,7 +163,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="courses">
+                    <Link to="/courses">
                       <img
                         src={images.pageOne.categoryThree}
                         className="card-img-top"
@@ -173,7 +173,7 @@ const Home = () => {
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Web Design</h5>
                       <Link
-                        to="courses"
+                        to="/courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         15 Items
@@ -184,7 +184,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="courses">
+                    <Link to="/courses">
                       <img
                         src={images.pageOne.categoryFour}
                         className="card-img-top"
@@ -194,7 +194,7 @@ const Home = () => {
                     <div className="card-body">
                       <h5 className="card-title fw-bold">IT & Software</h5>
                       <Link
-                        to="courses"
+                        to="/courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         26 Items
@@ -274,7 +274,7 @@ const Home = () => {
           <div className="row row-cols-1 row-cols-md-4 g-4">
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseOne}
                     className="card-img-top"
@@ -292,7 +292,7 @@ const Home = () => {
                   <h5 className="card-title fw-bold my-3">
                     <Link
                       className="text-decoration-none tx-black"
-                      to="course-details"
+                      to="/course-details"
                     >
                       The Complete JavaScript Course From Zero to Expert!
                     </Link>
@@ -316,7 +316,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseTwo}
                     className="card-img-top"
@@ -334,7 +334,7 @@ const Home = () => {
                   <h5 className="card-title fw-bold my-3">
                     <Link
                       className="text-decoration-none tx-black"
-                      to="course-details"
+                      to="/course-details"
                     >
                       Online Courses Can Also Provide Access High-Quality
                     </Link>
@@ -358,7 +358,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseThree}
                     className="card-img-top"
@@ -376,7 +376,7 @@ const Home = () => {
                   <h5 className="card-title fw-bold my-3">
                     <Link
                       className="text-decoration-none tx-black"
-                      to="course-details"
+                      to="/course-details"
                     >
                       Online Courses Can Also Provide Access High-Quality
                     </Link>
@@ -400,7 +400,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseFour}
                     className="card-img-top"
@@ -417,7 +417,7 @@ const Home = () => {
                   </div>
                   <h5 className="card-title fw-bold my-3">
                     <Link
-                      to="course-details"
+                      to="/course-details"
                       className="text-decoration-none tx-black"
                     >
                       Learn how to start an amazon FBA store & analysis
@@ -442,7 +442,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseFive}
                     className="card-img-top"
@@ -459,7 +459,7 @@ const Home = () => {
                   </div>
                   <h5 className="card-title fw-bold my-3">
                     <Link
-                      to="course-details"
+                      to="/course-details"
                       className="text-decoration-none tx-black"
                     >
                       Unity Medical Visualize Deployment and Usability
@@ -484,7 +484,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseSix}
                     className="card-img-top"
@@ -501,7 +501,7 @@ const Home = () => {
                   </div>
                   <h5 className="card-title fw-bold my-3">
                     <Link
-                      to="course-details"
+                      to="/course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
@@ -526,7 +526,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseSeven}
                     className="card-img-top"
@@ -543,7 +543,7 @@ const Home = () => {
                   </div>
                   <h5 className="card-title fw-bold my-3">
                     <Link
-                      to="course-details"
+                      to="/course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
@@ -568,7 +568,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="course-details">
+                <Link to="/course-details">
                   <img
                     src={images.pageOne.courses.courseEight}
                     className="card-img-top"
@@ -585,7 +585,7 @@ const Home = () => {
                   </div>
                   <h5 className="card-title fw-bold my-3">
                     <Link
-                      to="course-details"
+                      to="/course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
@@ -651,7 +651,7 @@ const Home = () => {
                 </ul>
                 <Link
                   className="btn bg-blue text-white fw-bold px-3 py-2 ms-3"
-                  to="courses"
+                  to="/courses"
                 >
                   More Details
                 </Link>
@@ -690,7 +690,7 @@ const Home = () => {
           <div className="row row-cols-1 row-cols-lg-3 g-4">
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="blog-details">
+                <Link to="/blog-details">
                   <img
                     src={images.pageOne.blogOne}
                     className="card-img-top"
@@ -709,14 +709,14 @@ const Home = () => {
                   <h5 className="card-title mt-2 mb-4">
                     <Link
                       className="text-decoration-none tx-black fw-bold"
-                      to="blog-details"
+                      to="/blog-details"
                     >
                       These are Designed to Provide Hands Training and
                       Skill-Building.
                     </Link>
                   </h5>
                   <Link
-                    to="blog-details"
+                    to="/blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
@@ -726,7 +726,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="blog-details">
+                <Link to="/blog-details">
                   <img
                     src={images.pageOne.blogTwo}
                     className="card-img-top"
@@ -745,14 +745,14 @@ const Home = () => {
                   <h5 className="card-title mt-2 mb-4">
                     <Link
                       className="text-decoration-none tx-black fw-bold"
-                      to="blog-details"
+                      to="/blog-details"
                     >
                       Personalized Learning & Meeting The Needs of Every
                       Student.
                     </Link>
                   </h5>
                   <Link
-                    to="blog-details"
+                    to="/blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
@@ -762,7 +762,7 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="blog-details">
+                <Link to="/blog-details">
                   <img
                     src={images.pageOne.blogThree}
                     className="card-img-top"
@@ -781,14 +781,14 @@ const Home = () => {
                   <h5 className="card-title mt-2 mb-4">
                     <Link
                       className="text-decoration-none tx-black fw-bold"
-                      to="blog-details"
+                      to="/blog-details"
                     >
                       The Whole Child Fostering Social and Emotional
                       Development.
                     </Link>
                   </h5>
                   <Link
-                    to="blog-details"
+                    to="/blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
@@ -950,7 +950,7 @@ const Home = () => {
               <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
                 <div className="row g-4 align-items-center">
                   <div className="col-md-4">
-                    <Link to="blog-details">
+                    <Link to="/blog-details">
                       <img
                         src={images.pageOne.blogFour}
                         className="img-fluid rounded w-100"
@@ -970,14 +970,14 @@ const Home = () => {
                       <h5 className="card-title mt-2 mb-4">
                         <Link
                           className="text-decoration-none tx-black fw-bold"
-                          to="blog-details"
+                          to="/blog-details"
                         >
                           Nothing is Impossible to Learn If you are Passionate
                           About this Subject
                         </Link>
                       </h5>
                       <Link
-                        to="blog-details"
+                        to="/blog-details"
                         className="btn border border-1 px-3 py-2 mb-4"
                       >
                         Read more
@@ -989,7 +989,7 @@ const Home = () => {
               <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
                 <div className="row g-4 align-items-center">
                   <div className="col-md-4">
-                    <Link to="blog-details">
+                    <Link to="/blog-details">
                       <img
                         src={images.pageOne.blogFive}
                         className="img-fluid rounded w-100"
@@ -1009,14 +1009,14 @@ const Home = () => {
                       <h5 className="card-title mt-2 mb-4">
                         <Link
                           className="text-decoration-none tx-black fw-bold"
-                          to="blog-details"
+                          to="/blog-details"
                         >
                           Nothing is Impossible to Learn If you are Passionate
                           About this Subject
                         </Link>
                       </h5>
                       <Link
-                        to="blog-details"
+                        to="/blog-details"
                         className="btn border border-1 px-3 py-2 mb-4"
                       >
                         Read more
@@ -1028,7 +1028,7 @@ const Home = () => {
             </div>
             <div className="col-lg-4">
               <div className="card h-100 box-radius box-shadow border-0">
-                <Link to="blog-details">
+                <Link to="/blog-details">
                   <img
                     src={images.pageOne.blogSix}
                     className="card-img-top"
@@ -1046,14 +1046,14 @@ const Home = () => {
                   <h5 className="card-title mt-2 mb-3">
                     <Link
                       className="text-decoration-none tx-black fw-bold"
-                      to="blog-details"
+                      to="/blog-details"
                     >
                       Education Week News and Views on Education Policy and
                       Practice.
                     </Link>
                   </h5>
                   <Link
-                    to="blog-details"
+                    to="/blog-details"
                     className="btn border border-1 px-3 py-2"
                   >
                     Read more
