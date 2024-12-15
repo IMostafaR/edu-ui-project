@@ -51,6 +51,9 @@ import teacherEight from "./page-5/8.jpg";
 import teacherNine from "./page-5/9.jpg";
 import teacherTen from "./page-5/10.jpg";
 import bigBannerCourse from "./page-3/1.jpg";
+import google from "./page-8/google.png";
+import apple from "./page-8/apple.png";
+import facebook from "./page-8/facebook.png";
 
 export const images = {
   logo,
@@ -114,4 +117,7 @@ export const images = {
     teacherTen,
   },
   bigBannerCourse,
+  google,
+  apple,
+  facebook,
 };
