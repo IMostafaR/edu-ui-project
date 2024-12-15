@@ -5,13 +5,12 @@ import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
 
 const About = () => {
-  <Helmet>
-    <title>About</title>
-  </Helmet>;
-
   return (
     <>
-      {/* <!-- Header Banner --> */}
+      <Helmet>
+        <title>About</title>
+      </Helmet>
+      ;{/* <!-- Header Banner --> */}
       <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
         <h1 className="fw-bold">About Us</h1>
         <nav aria-label="breadcrumb">
@@ -30,7 +29,6 @@ const About = () => {
           alt="star symbol"
         />
       </section>
-
       {/* <!-- Learning --> */}
       <section className="pt-120 learning">
         <div className="container">
@@ -79,7 +77,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* <!-- Teachers --> */}
       <section className="pt-120">
         <div className="container">
@@ -204,7 +201,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* <!-- Blogs --> */}
       <section className="pt-5 blogs">
         <div className="container">
