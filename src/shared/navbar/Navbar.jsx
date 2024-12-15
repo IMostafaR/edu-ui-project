@@ -1,13 +1,24 @@
 import "./style.css";
+import { images } from "../../assets/imgs/index.js";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 0) {
+      navbar.classList.add("box-shadow");
+    } else {
+      navbar.classList.remove("box-shadow");
+    }
+  });
+
   return (
     <header>
       <nav className="navbar navbar-expand-xl fixed-top fw-bold bg-body">
         <div className="container py-3">
-          <a className="navbar-brand position-relative" href="home.html">
-            <img src="assets/images/logo/logo.png" alt="logo" />
-          </a>
+          <Link className="navbar-brand position-relative" to="/">
+            <img src={images.logo} alt="logo" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,67 +33,59 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item ps-xl-4 pe-xl-3">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="home.html"
-                >
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="course.html"
+                  to="courses"
                 >
                   Courses
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="teachers.html"
+                  to="teachers"
                 >
                   Teachers
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="price.html"
+                  to="pricing"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="about.html"
+                  to="about"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="blog.html"
-                >
+                <Link className="nav-link active" aria-current="page" to="blog">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-xl-3">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="contact.html"
+                  to="contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -104,9 +107,9 @@ const Navbar = () => {
               </div>
             </form>
             <button className="btn py-2 px-3 bg-blue fw-bold w-auto">
-              <a className="text-white text-decoration-none" href="signup.html">
+              <Link className="text-white text-decoration-none" to="signup">
                 Enroll
-              </a>
+              </Link>
             </button>
           </div>
         </div>

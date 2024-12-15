@@ -1,9 +1,7 @@
 import "./style.css";
-import Navbar from "../../shared/navbar/Navbar.jsx";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <section className="home-banner bg-light-blue rounded-5">
         <div className="container pt-5">
           <div className="row align-items-center">
