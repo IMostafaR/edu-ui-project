@@ -50,6 +50,7 @@ import teacherSeven from "./page-5/7.jpg";
 import teacherEight from "./page-5/8.jpg";
 import teacherNine from "./page-5/9.jpg";
 import teacherTen from "./page-5/10.jpg";
+import bigBannerCourse from "./page-3/1.jpg";
 
 export const images = {
   logo,
@@ -112,4 +113,5 @@ export const images = {
     teacherNine,
     teacherTen,
   },
+  bigBannerCourse,
 };
