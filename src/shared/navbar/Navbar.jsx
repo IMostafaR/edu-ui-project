@@ -106,11 +106,12 @@ const Navbar = () => {
                 </button>
               </div>
             </form>
-            <button className="btn py-2 px-3 bg-blue fw-bold w-auto">
-              <Link className="text-white text-decoration-none" to="signup">
-                Enroll
-              </Link>
-            </button>
+            <Link
+              className="btn py-2 px-3 bg-blue fw-bold w-auto text-white text-decoration-none"
+              to="signup"
+            >
+              Enroll
+            </Link>
           </div>
         </div>
       </nav>
