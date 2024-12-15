@@ -673,7 +673,7 @@ const Home = () => {
                   </span>
                   <h1 className="fw-bold tx-black mb-5">Upcoming Events</h1>
                 </div>
-                <div className="d-flex justify-content-start gap-2">
+                <div className="d-flex justify-content-start gap-2 align-items-center">
                   <i
                     className="fa-solid fa-arrow-left border rounded-circle shadow-lg tx-gray p-3"
                     role="button"
@@ -828,7 +828,11 @@ const Home = () => {
                   <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-3">
                       <div>
-                        <img src="assets/images/page-1/admin-1.jpg" alt="" />
+                        <img
+                          className="rounded-circle"
+                          src={images.pageOne.adminOne}
+                          alt="admin"
+                        />
                       </div>
                       <div>
                         <p className="m-0 fw-bold tx-black">Brian Cumin</p>
@@ -857,7 +861,11 @@ const Home = () => {
                   <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-3">
                       <div>
-                        <img src="assets/images/page-1/admin-4.jpg" alt="" />
+                        <img
+                          className="rounded-circle"
+                          src={images.pageOne.adminTwo}
+                          alt="admin"
+                        />
                       </div>
                       <div>
                         <p className="m-0 fw-bold tx-black">Penny Tool</p>
@@ -888,7 +896,11 @@ const Home = () => {
                   <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-3">
                       <div>
-                        <img src="assets/images/page-1/admin-6.jpg" alt="" />
+                        <img
+                          className="rounded-circle"
+                          src={images.pageOne.adminThree}
+                          alt="admin"
+                        />
                       </div>
                       <div>
                         <p className="m-0 fw-bold tx-black">Brian Cumin</p>
@@ -940,7 +952,7 @@ const Home = () => {
                   <div className="col-md-4">
                     <Link to="blog-details">
                       <img
-                        src="assets/images/page-1/blog-1.jpg"
+                        src={images.pageOne.blogFour}
                         className="img-fluid rounded w-100"
                         alt="blog-img"
                       />
@@ -979,7 +991,7 @@ const Home = () => {
                   <div className="col-md-4">
                     <Link to="blog-details">
                       <img
-                        src="assets/images/page-1/blog-2.jpg"
+                        src={images.pageOne.blogFive}
                         className="img-fluid rounded w-100"
                         alt="blog-img"
                       />
@@ -1018,7 +1030,7 @@ const Home = () => {
               <div className="card h-100 box-radius box-shadow border-0">
                 <Link to="blog-details">
                   <img
-                    src="assets/images/page-1/blog-3.jpg"
+                    src={images.pageOne.blogSix}
                     className="card-img-top"
                     alt="blog-img"
                   />

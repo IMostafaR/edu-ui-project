@@ -32,6 +32,12 @@ import learning from "./page-4/1.png";
 import blogOne from "./page-4/blog-1.jpg";
 import blogTwo from "./page-4/blog-2.jpg";
 import blogThree from "./page-4/blog-3.jpg";
+import blogFour from "./page-1/blog-1.jpg";
+import blogFive from "./page-1/blog-2.jpg";
+import blogSix from "./page-1/blog-3.jpg";
+import adminOne from "./page-1/admin-1.jpg";
+import adminTwo from "./page-1/admin-2.jpg";
+import adminThree from "./page-1/admin-3.jpg";
 
 export const images = {
   logo,
@@ -72,6 +78,12 @@ export const images = {
     blogOne,
     blogTwo,
     blogThree,
+    blogFour,
+    blogFive,
+    blogSix,
+    adminOne,
+    adminTwo,
+    adminThree,
   },
   error,
 };
