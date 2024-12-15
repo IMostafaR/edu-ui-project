@@ -1,7 +1,16 @@
+import { Link } from "react-router-dom";
+import { images } from "../../assets/imgs/index.js";
 import "./style.css";
+import { Helmet } from "react-helmet";
+
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+
+      {/* home banner */}
       <section className="home-banner bg-light-blue rounded-5">
         <div className="container pt-5">
           <div className="row align-items-center">
@@ -18,25 +27,25 @@ const Home = () => {
                   students will gain a solid foundation in educational
                   psychology.
                 </p>
-                <a
+                <Link
                   className="btn bg-blue text-white fw-bold px-4 py-3"
-                  href="course.html"
+                  to="courses"
                 >
                   View All Course
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="position-relative banner-img">
                 <img
                   className="img-fluid position-relative z-3"
-                  src="assets/images/page-1/banner-img.png"
+                  src={images.pageOne.banner}
                   alt="female student"
                 />
                 <img
                   className="position-absolute img-fluid z-0 end-0"
-                  src="assets/images/page-1/shape_1.png"
-                  alt=""
+                  src={images.pageOne.ring}
+                  alt="ring"
                 />
               </div>
             </div>
@@ -112,85 +121,85 @@ const Home = () => {
               <div className="row row-cols-1 row-cols-md-4 g-4">
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <a href="course.html">
+                    <Link to="courses">
                       <img
                         src="assets/images/page-1/1.jpg"
                         className="card-img-top"
                         alt="category img"
                       />
-                    </a>
+                    </Link>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Digital Marketing</h5>
-                      <a
-                        href="course.html"
+                      <Link
+                        to="courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         26 Items
                         <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <a href="course.html">
+                    <Link to="courses">
                       <img
                         src="assets/images/page-1/2.jpg"
                         className="card-img-top"
                         alt="category img"
                       />
-                    </a>
+                    </Link>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Graphic Design</h5>
-                      <a
-                        href="course.html"
+                      <Link
+                        to="courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         78 Items
                         <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <a href="course.html">
+                    <Link to="courses">
                       <img
                         src="assets/images/page-1/3.jpg"
                         className="card-img-top"
                         alt="category img"
                       />
-                    </a>
+                    </Link>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">Web Design</h5>
-                      <a
-                        href="course.html"
+                      <Link
+                        to="courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         15 Items
                         <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg col-md-6 col-12">
                   <div className="card h-100 box-radius shadow-lg border-0">
-                    <a href="course.html">
+                    <Link to="courses">
                       <img
                         src="assets/images/page-1/4.jpg"
                         className="card-img-top"
                         alt="category img"
                       />
-                    </a>
+                    </Link>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">IT & Software</h5>
-                      <a
-                        href="course.html"
+                      <Link
+                        to="courses"
                         className="card-text text-decoration-none tx-gray"
                       >
                         26 Items
                         <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -217,44 +226,44 @@ const Home = () => {
                 <div className="">
                   <ul className="nav nav-tabs card-header-tabs p-2 d-flex justify-content-between">
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="text-decoration-none btn bg-blue text-white px-4 rounded-5 mb-2 ms-2"
-                        href="#"
+                        to="#"
                       >
                         See All
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
-                        href="#"
+                        to="#"
                       >
                         Trending
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
-                        href="#"
+                        to="#"
                       >
                         Featured
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
-                        href="#"
+                        to="#"
                       >
                         Web Design
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2 me-2"
-                        href="#"
+                        to="#"
                       >
                         Popular
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -265,13 +274,13 @@ const Home = () => {
           <div className="row row-cols-1 row-cols-md-4 g-4">
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/1(4).jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -281,12 +290,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black"
-                      href="course-details.html"
+                      to="course-details"
                     >
                       The Complete JavaScript Course From Zero to Expert!
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -307,13 +316,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/2(2).jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -323,12 +332,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">Yale University</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black"
-                      href="course-details.html"
+                      to="course-details"
                     >
                       Online Courses Can Also Provide Access High-Quality
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -349,13 +358,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/3(2).jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -365,12 +374,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black"
-                      href="course-details.html"
+                      to="course-details"
                     >
                       Online Courses Can Also Provide Access High-Quality
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -391,13 +400,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/4(2).jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -407,12 +416,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
-                      href="course-details.html"
+                    <Link
+                      to="course-details"
                       className="text-decoration-none tx-black"
                     >
                       Learn how to start an amazon FBA store & analysis
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -433,13 +442,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/5.jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -449,12 +458,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">Yonsei University</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
-                      href="course-details.html"
+                    <Link
+                      to="course-details"
                       className="text-decoration-none tx-black"
                     >
                       Unity Medical Visualize Deployment and Usability
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -475,13 +484,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/6.jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -491,12 +500,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
-                      href="course-details.html"
+                    <Link
+                      to="course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -517,13 +526,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/7.jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -533,12 +542,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
-                      href="course-details.html"
+                    <Link
+                      to="course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -559,13 +568,13 @@ const Home = () => {
             </div>
             <div className="col">
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <a href="course-details.html">
+                <Link to="course-details">
                   <img
                     src="assets/images/page-1/8.jpg"
                     className="card-img-top"
                     alt="course-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <div>
                     <img
@@ -575,12 +584,12 @@ const Home = () => {
                     <span className="tx-gray ps-3">University of London</span>
                   </div>
                   <h5 className="card-title fw-bold my-3">
-                    <a
-                      href="course-details.html"
+                    <Link
+                      to="course-details"
                       className="text-decoration-none tx-black"
                     >
                       The Complete JavaScript Course From Zero to Expert!
-                    </a>
+                    </Link>
                   </h5>
                 </div>
                 <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
@@ -640,12 +649,12 @@ const Home = () => {
                     Access to 35,000+ top Eduan courses, anytime, anywhere
                   </li>
                 </ul>
-                <a
+                <Link
                   className="btn bg-blue text-white fw-bold px-3 py-2 ms-3"
-                  href="course.html"
+                  to="courses"
                 >
                   More Details
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -681,13 +690,13 @@ const Home = () => {
           <div className="row row-cols-1 row-cols-lg-3 g-4">
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <a href="blog-details.html">
+                <Link to="blog-details">
                   <img
                     src="assets/images/page-4/blog-1.jpg"
                     className="card-img-top"
                     alt="blog-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body p-4">
                   <span className="pe-3 tx-gray">
                     <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
@@ -698,32 +707,32 @@ const Home = () => {
                     6.00 pm
                   </span>
                   <h5 className="card-title mt-2 mb-4">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black fw-bold"
-                      href="blog-details.html"
+                      to="blog-details"
                     >
                       These are Designed to Provide Hands Training and
                       Skill-Building.
-                    </a>
+                    </Link>
                   </h5>
-                  <a
-                    href="blog-details.html"
+                  <Link
+                    to="blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <a href="blog-details.html">
+                <Link to="blog-details">
                   <img
                     src="assets/images/page-4/blog-2.jpg"
                     className="card-img-top"
                     alt="blog-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body p-4">
                   <span className="pe-3 tx-gray">
                     <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
@@ -734,32 +743,32 @@ const Home = () => {
                     6.00 pm
                   </span>
                   <h5 className="card-title mt-2 mb-4">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black fw-bold"
-                      href="blog-details.html"
+                      to="blog-details"
                     >
                       Personalized Learning & Meeting The Needs of Every
                       Student.
-                    </a>
+                    </Link>
                   </h5>
-                  <a
-                    href="blog-details.html"
+                  <Link
+                    to="blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="card h-100 box-radius box-shadow p-3">
-                <a href="blog-details.html">
+                <Link to="blog-details">
                   <img
                     src="assets/images/page-4/blog-3.jpg"
                     className="card-img-top"
                     alt="blog-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body p-4">
                   <span className="pe-3 tx-gray">
                     <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
@@ -770,20 +779,20 @@ const Home = () => {
                     6.00 pm
                   </span>
                   <h5 className="card-title mt-2 mb-4">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black fw-bold"
-                      href="blog-details.html"
+                      to="blog-details"
                     >
                       The Whole Child Fostering Social and Emotional
                       Development.
-                    </a>
+                    </Link>
                   </h5>
-                  <a
-                    href="blog-details.html"
+                  <Link
+                    to="blog-details"
                     className="btn border border-1 px-3 py-2 mb-4"
                   >
                     Get Ticket
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -929,13 +938,13 @@ const Home = () => {
               <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
                 <div className="row g-4 align-items-center">
                   <div className="col-md-4">
-                    <a href="blog-details.html">
+                    <Link to="blog-details">
                       <img
                         src="assets/images/page-1/blog-1.jpg"
                         className="img-fluid rounded w-100"
                         alt="blog-img"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -947,20 +956,20 @@ const Home = () => {
                         23, 2023
                       </span>
                       <h5 className="card-title mt-2 mb-4">
-                        <a
+                        <Link
                           className="text-decoration-none tx-black fw-bold"
-                          href="blog-details.html"
+                          to="blog-details"
                         >
                           Nothing is Impossible to Learn If you are Passionate
                           About this Subject
-                        </a>
+                        </Link>
                       </h5>
-                      <a
-                        href="blog-details.html"
+                      <Link
+                        to="blog-details"
                         className="btn border border-1 px-3 py-2 mb-4"
                       >
                         Read more
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -968,13 +977,13 @@ const Home = () => {
               <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
                 <div className="row g-4 align-items-center">
                   <div className="col-md-4">
-                    <a href="blog-details.html">
+                    <Link to="blog-details">
                       <img
                         src="assets/images/page-1/blog-2.jpg"
                         className="img-fluid rounded w-100"
                         alt="blog-img"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
@@ -986,20 +995,20 @@ const Home = () => {
                         23, 2023
                       </span>
                       <h5 className="card-title mt-2 mb-4">
-                        <a
+                        <Link
                           className="text-decoration-none tx-black fw-bold"
-                          href="blog-details.html"
+                          to="blog-details"
                         >
                           Nothing is Impossible to Learn If you are Passionate
                           About this Subject
-                        </a>
+                        </Link>
                       </h5>
-                      <a
-                        href="blog-details.html"
+                      <Link
+                        to="blog-details"
                         className="btn border border-1 px-3 py-2 mb-4"
                       >
                         Read more
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1007,13 +1016,13 @@ const Home = () => {
             </div>
             <div className="col-lg-4">
               <div className="card h-100 box-radius box-shadow border-0">
-                <a href="blog-details.html">
+                <Link to="blog-details">
                   <img
                     src="assets/images/page-1/blog-3.jpg"
                     className="card-img-top"
                     alt="blog-img"
                   />
-                </a>
+                </Link>
                 <div className="card-body p-4">
                   <span className="pe-3 tx-gray">
                     <i className="fa-regular fa-user pe-2 tx-red"></i>Admin
@@ -1023,20 +1032,20 @@ const Home = () => {
                     2023
                   </span>
                   <h5 className="card-title mt-2 mb-3">
-                    <a
+                    <Link
                       className="text-decoration-none tx-black fw-bold"
-                      href="blog-details.html"
+                      to="blog-details"
                     >
                       Education Week News and Views on Education Policy and
                       Practice.
-                    </a>
+                    </Link>
                   </h5>
-                  <a
-                    href="blog-details.html"
+                  <Link
+                    to="blog-details"
                     className="btn border border-1 px-3 py-2"
                   >
                     Read more
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
