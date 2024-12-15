@@ -1,13 +1,13 @@
+import Footer from "../shared/footer/Footer.jsx";
 import Navbar from "../shared/navbar/Navbar.jsx";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  let navigate = useNavigate();
-
   return (
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 };
