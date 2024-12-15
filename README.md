@@ -17,6 +17,7 @@ The project is divided into three development levels, each focusing on a specifi
 
 - Enhance the UI with dynamic, component-based architecture using React.js.
 
+
 ### Level 3: Next.js
 
 ---
@@ -69,3 +70,24 @@ This project is part of the Frontend Web Development Bootcamp, hosted by Caree18
 ## License
 
 This project is licensed under the MIT License.
+
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+
+
+
+
+- npm install 
+- npm run dev 
