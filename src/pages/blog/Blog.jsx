@@ -10,7 +10,7 @@ const Blog = () => {
       <Helmet>
         <title>Blogs</title>
       </Helmet>
-      ;{/* <!-- Header Banner --> */}
+      {/* <!-- Header Banner --> */}
       <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
         <h1 className="fw-bold">Blog Grid</h1>
         <nav aria-label="breadcrumb">
