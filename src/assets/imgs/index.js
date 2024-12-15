@@ -29,6 +29,9 @@ import courseSix from "./page-1/6.jpg";
 import courseSeven from "./page-1/7.jpg";
 import courseEight from "./page-1/8.jpg";
 import learning from "./page-4/1.png";
+import blogOne from "./page-4/blog-1.jpg";
+import blogTwo from "./page-4/blog-2.jpg";
+import blogThree from "./page-4/blog-3.jpg";
 
 export const images = {
   logo,
@@ -66,6 +69,9 @@ export const images = {
       courseEight,
     },
     learning,
+    blogOne,
+    blogTwo,
+    blogThree,
   },
   error,
 };

@@ -692,7 +692,7 @@ const Home = () => {
               <div className="card h-100 box-radius box-shadow p-3">
                 <Link to="blog-details">
                   <img
-                    src="assets/images/page-4/blog-1.jpg"
+                    src={images.pageOne.blogOne}
                     className="card-img-top"
                     alt="blog-img"
                   />
@@ -728,7 +728,7 @@ const Home = () => {
               <div className="card h-100 box-radius box-shadow p-3">
                 <Link to="blog-details">
                   <img
-                    src="assets/images/page-4/blog-2.jpg"
+                    src={images.pageOne.blogTwo}
                     className="card-img-top"
                     alt="blog-img"
                   />
@@ -764,7 +764,7 @@ const Home = () => {
               <div className="card h-100 box-radius box-shadow p-3">
                 <Link to="blog-details">
                   <img
-                    src="assets/images/page-4/blog-3.jpg"
+                    src={images.pageOne.blogThree}
                     className="card-img-top"
                     alt="blog-img"
                   />
