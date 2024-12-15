@@ -123,7 +123,7 @@ This project includes a detailed navigation system for an educational website. T
 
 Below is a visual representation of the website navigation:
 
-![Website Navigation](/assets/images/ui/Site-map.jpg)
+![Website Navigation](./src/assets/imgs/ui/Site-map.jpg)
 
 ---
 

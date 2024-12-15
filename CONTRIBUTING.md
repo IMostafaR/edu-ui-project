@@ -70,12 +70,12 @@ git pull
 ### **4. Switch to the desired branch to start development:**
 
 ```bash
-git checkout level-1-html-css-js
+git checkout level-2-react
 ```
 
 ### **5. Creating a Personal Branch**
 
-Each team member must create their own branch from working branch such as `level-1-html-css-js`.
+Each team member must create their own branch from working branch such as `level-2-react`.
 
 #### Branch Naming Convention
 
@@ -84,9 +84,9 @@ Use the format:
 
 Examples:
 
-- `level-1/ahmed-mostafa/course-page`
-- `level-1/yasmine-moussa/navbar`
-- `level-1/omar-elsayed/footer`
+- `level-2/ahmed-mostafa/course-page`
+- `level-2/yasmine-moussa/navbar`
+- `level-2/omar-elsayed/footer`
 
 #### Creating and Switching to Your Branch
 
@@ -97,7 +97,7 @@ git checkout -b <level-number>/<name>/<feature-or-task>
 Example:
 
 ```bash
-git checkout -b level-1/ahmed-mostafa/course-page
+git checkout -b level-2/ahmed-mostafa/course-page
 ```
 
 ### **6. Working on Your Branch**
@@ -114,7 +114,7 @@ Once your task is complete:
 git push origin <level-number>/<name>/<feature-or-task>
 ```
 
-2. On GitHub, create a Pull Request (PR) to merge your branch into the working branch such as `level-1-html-css-js`.
+2. On GitHub, create a Pull Request (PR) to merge your branch into the working branch such as `level-2-react`.
 
    - Provide a clear description of the changes in the PR.
    - Assign the PR to the team leader or reviewers for approval.
@@ -132,7 +132,7 @@ git fetch origin
 2. Merge updates into your branch:
 
 ```bash
-git merge level-1-html-css-js
+git merge level-2-react
 ```
 
 3. Resolve any merge conflicts if necessary.
