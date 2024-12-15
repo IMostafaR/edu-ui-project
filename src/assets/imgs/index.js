@@ -20,6 +20,15 @@ import uniFive from "./page-1/v5.png";
 import uniSix from "./page-1/v6.png";
 import uniSeven from "./page-1/v7.png";
 import uniEight from "./page-1/v8.png";
+import courseOne from "./page-1/1(4).jpg";
+import courseTwo from "./page-1/2(2).jpg";
+import courseThree from "./page-1/3(2).jpg";
+import courseFour from "./page-1/4(2).jpg";
+import courseFive from "./page-1/5.jpg";
+import courseSix from "./page-1/6.jpg";
+import courseSeven from "./page-1/7.jpg";
+import courseEight from "./page-1/8.jpg";
+import learning from "./page-4/1.png";
 
 export const images = {
   logo,
@@ -46,6 +55,17 @@ export const images = {
       uniSeven,
       uniEight,
     },
+    courses: {
+      courseOne,
+      courseTwo,
+      courseThree,
+      courseFour,
+      courseFive,
+      courseSix,
+      courseSeven,
+      courseEight,
+    },
+    learning,
   },
   error,
 };

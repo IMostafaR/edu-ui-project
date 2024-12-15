@@ -276,7 +276,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/1(4).jpg"
+                    src={images.pageOne.courses.courseOne}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -318,7 +318,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/2(2).jpg"
+                    src={images.pageOne.courses.courseTwo}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -360,7 +360,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/3(2).jpg"
+                    src={images.pageOne.courses.courseThree}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -402,7 +402,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/4(2).jpg"
+                    src={images.pageOne.courses.courseFour}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -444,7 +444,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/5.jpg"
+                    src={images.pageOne.courses.courseFive}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -486,7 +486,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/6.jpg"
+                    src={images.pageOne.courses.courseSix}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -528,7 +528,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/7.jpg"
+                    src={images.pageOne.courses.courseSeven}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -570,7 +570,7 @@ const Home = () => {
               <div className="card h-100 box-radius border-0 shadow-lg p-2">
                 <Link to="course-details">
                   <img
-                    src="assets/images/page-1/8.jpg"
+                    src={images.pageOne.courses.courseEight}
                     className="card-img-top"
                     alt="course-img"
                   />
@@ -620,7 +620,7 @@ const Home = () => {
               <div>
                 <img
                   className="img-fluid"
-                  src="assets/images/page-4/1.png"
+                  src={images.pageOne.learning}
                   alt="student-imgs"
                 />
               </div>
