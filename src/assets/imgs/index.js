@@ -54,6 +54,12 @@ import bigBannerCourse from "./page-3/1.jpg";
 import google from "./page-8/google.png";
 import apple from "./page-8/apple.png";
 import facebook from "./page-8/facebook.png";
+import fCourseOne from "./page-6/4.jpg";
+import fCourseTwo from "./page-6/2.jpg";
+import fCourseThree from "./page-6/3.jpg";
+import authorOne from "./page-6/author-1.jpg";
+import authorTwo from "./page-6/author-2.jpg";
+import authorThree from "./page-6/author-3.jpg";
 
 export const images = {
   logo,
@@ -120,4 +126,12 @@ export const images = {
   google,
   apple,
   facebook,
+  pageSix: {
+    fCourseOne,
+    fCourseTwo,
+    fCourseThree,
+    authorOne,
+    authorTwo,
+    authorThree,
+  },
 };
