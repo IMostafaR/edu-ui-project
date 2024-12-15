@@ -39,6 +39,17 @@ import adminOne from "./page-1/admin-1.jpg";
 import adminTwo from "./page-1/admin-2.jpg";
 import adminThree from "./page-1/admin-3.jpg";
 import star from "./page-2/shape-1.png";
+import underline from "./page-5/line.png";
+import teacherOne from "./page-5/1.jpg";
+import teacherTwo from "./page-5/2.jpg";
+import teacherThree from "./page-5/3.jpg";
+import teacherFour from "./page-5/4.jpg";
+import teacherFive from "./page-5/5.jpg";
+import teacherSix from "./page-5/6.jpg";
+import teacherSeven from "./page-5/7.jpg";
+import teacherEight from "./page-5/8.jpg";
+import teacherNine from "./page-5/9.jpg";
+import teacherTen from "./page-5/10.jpg";
 
 export const images = {
   logo,
@@ -88,4 +99,17 @@ export const images = {
   },
   pageTwo: { star },
   error,
+  underline,
+  teachers: {
+    teacherOne,
+    teacherTwo,
+    teacherThree,
+    teacherFour,
+    teacherFive,
+    teacherSix,
+    teacherSeven,
+    teacherEight,
+    teacherNine,
+    teacherTen,
+  },
 };
