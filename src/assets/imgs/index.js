@@ -38,6 +38,7 @@ import blogSix from "./page-1/blog-3.jpg";
 import adminOne from "./page-1/admin-1.jpg";
 import adminTwo from "./page-1/admin-2.jpg";
 import adminThree from "./page-1/admin-3.jpg";
+import star from "./page-2/shape-1.png";
 
 export const images = {
   logo,
@@ -85,5 +86,6 @@ export const images = {
     adminTwo,
     adminThree,
   },
+  pageTwo: { star },
   error,
 };
