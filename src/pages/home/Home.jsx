@@ -68,32 +68,32 @@ const Home = () => {
               <div className="companies d-flex justify-content-evenly align-content-center gap-5 flex-wrap border border-1 py-4">
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_5.png"
+                  src={images.pageOne.dropbox}
                   alt="dropbox logo"
                 />
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_6.png"
+                  src={images.pageOne.clickUp}
                   alt="dropbox logo"
                 />
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_1.png"
+                  src={images.pageOne.shopify}
                   alt="dropbox logo"
                 />
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_2.png"
+                  src={images.pageOne.intu}
                   alt="dropbox logo"
                 />
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_3.png"
+                  src={images.pageOne.slack}
                   alt="dropbox logo"
                 />
                 <img
                   className="opacity-25"
-                  src="assets/images/page-1/h_4.png"
+                  src={images.pageOne.twilio}
                   alt="dropbox logo"
                 />
               </div>
@@ -123,7 +123,7 @@ const Home = () => {
                   <div className="card h-100 box-radius shadow-lg border-0">
                     <Link to="courses">
                       <img
-                        src="assets/images/page-1/1.jpg"
+                        src={images.pageOne.categoryOne}
                         className="card-img-top"
                         alt="category img"
                       />
@@ -144,7 +144,7 @@ const Home = () => {
                   <div className="card h-100 box-radius shadow-lg border-0">
                     <Link to="courses">
                       <img
-                        src="assets/images/page-1/2.jpg"
+                        src={images.pageOne.categoryTwo}
                         className="card-img-top"
                         alt="category img"
                       />
@@ -165,7 +165,7 @@ const Home = () => {
                   <div className="card h-100 box-radius shadow-lg border-0">
                     <Link to="courses">
                       <img
-                        src="assets/images/page-1/3.jpg"
+                        src={images.pageOne.categoryThree}
                         className="card-img-top"
                         alt="category img"
                       />
@@ -186,7 +186,7 @@ const Home = () => {
                   <div className="card h-100 box-radius shadow-lg border-0">
                     <Link to="courses">
                       <img
-                        src="assets/images/page-1/4.jpg"
+                        src={images.pageOne.categoryFour}
                         className="card-img-top"
                         alt="category img"
                       />
@@ -284,7 +284,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v1.png"
+                      src={images.pageOne.uniLogo.uniOne}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
@@ -326,7 +326,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v2.png"
+                      src={images.pageOne.uniLogo.uniTwo}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">Yale University</span>
@@ -368,7 +368,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v3.png"
+                      src={images.pageOne.uniLogo.uniThree}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
@@ -410,7 +410,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v4.png"
+                      src={images.pageOne.uniLogo.uniFour}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
@@ -452,7 +452,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v5.png"
+                      src={images.pageOne.uniLogo.uniFive}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">Yonsei University</span>
@@ -494,7 +494,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v1.png"
+                      src={images.pageOne.uniLogo.uniSix}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
@@ -536,7 +536,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v1.png"
+                      src={images.pageOne.uniLogo.uniSeven}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
@@ -578,7 +578,7 @@ const Home = () => {
                 <div className="card-body">
                   <div>
                     <img
-                      src="assets/images/page-1/v1.png"
+                      src={images.pageOne.uniLogo.uniEight}
                       alt="University logo"
                     />
                     <span className="tx-gray ps-3">University of London</span>
