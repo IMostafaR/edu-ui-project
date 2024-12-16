@@ -49,7 +49,7 @@ const CourseDetails = () => {
                   <div className="row col-lg-10 px-0">
                     <div className="col-lg-4 d-flex">
                       <div className="author-img">
-                        <img src="./assets/images/page-3/author.jpg" alt="" />
+                        <img src={images.pageSix.authorOne} alt="" />
                       </div>
                       <div className="author-info ps-2">
                         <span>Teacher</span>

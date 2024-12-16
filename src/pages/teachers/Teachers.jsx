@@ -12,7 +12,7 @@ const Teacher = () => {
       </Helmet>
       ;{/* <!-- Header Banner --> */}
       <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
-        <h1 className="fw-bold">About Us</h1>
+        <h1 className="fw-bold">Our Professor</h1>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb fw-bold">
             <li className="breadcrumb-item">
@@ -20,7 +20,7 @@ const Teacher = () => {
                 Home
               </Link>
             </li>
-            <li className="breadcrumb-item tx-blue">About</li>
+            <li className="breadcrumb-item tx-blue">Our Professor</li>
           </ol>
         </nav>
         <img

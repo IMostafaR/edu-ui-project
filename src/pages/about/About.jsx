@@ -213,7 +213,7 @@ const About = () => {
                     Articles
                     <img
                       className="position-absolute"
-                      src="assets/images/page-5/line.png"
+                      src={images.underline}
                       alt="line"
                     />
                   </span>
