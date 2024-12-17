@@ -2,14 +2,18 @@ import { Link } from "react-router-dom";
 import { images } from "../../assets/imgs/index.js";
 import "./style.css";
 import { Helmet } from "react-helmet";
+import Learning from "../../shared/Learning/learning.jsx";
+import FeaturedCourses from "../../shared/FeaturedCourses/FeaturedCourses.jsx";
+import ReviewCard from "../../components/ReviewCard/ReviewCard.jsx";
+import CategoryCard from "../../components/CategoryCard/CategoryCard.jsx";
+import EventCard from "../../components/EventAndBlogCard/EventAndBlogCard.jsx";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <Helmet>
         <title>Home</title>
       </Helmet>
-
       {/* home banner */}
       <section className="home-banner bg-light-blue rounded-5">
         <div className="container pt-5">
@@ -52,7 +56,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* <!-- Popular Categories --> */}
       <section className="pt-120 mb-5">
         <div className="container">
@@ -119,96 +122,12 @@ const Home = () => {
             </div>
             <div className="col-lg-9">
               <div className="row row-cols-1 row-cols-md-4 g-4">
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryOne}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Digital Marketing</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        26 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryTwo}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Graphic Design</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        78 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryThree}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Web Design</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        15 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryFour}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">IT & Software</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        26 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+                <CategoryCard />
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* <!-- Featured Courses --> */}
       <section className="pt-120 f-courses bg-purple">
         <div className="container">
@@ -271,396 +190,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row row-cols-1 row-cols-md-4 g-4">
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseOne}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniOne}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseTwo}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniTwo}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">Yale University</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      Online Courses Can Also Provide Access High-Quality
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseThree}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniThree}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      Online Courses Can Also Provide Access High-Quality
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseFour}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniFour}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      Learn how to start an amazon FBA store & analysis
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseFive}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniFive}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">Yonsei University</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      Unity Medical Visualize Deployment and Usability
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseSix}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniSix}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseSeven}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniSeven}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseEight}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniEight}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FeaturedCourses className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" />
         </div>
       </section>
-
       {/* <!-- Start learning Free --> */}
-      <section className="pt-120 learning">
-        <div className="container">
-          <div className="row align-items-center g-3">
-            <div className="col-lg-6">
-              <div>
-                <img
-                  className="img-fluid"
-                  src={images.pageOne.learning}
-                  alt="student-imgs"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="mt-5">
-                <span className="bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block free">
-                  Download App
-                </span>
-                <h2 className="fw-bold tx-black fs-1">
-                  Online Course can be Tailored to Need of learners
-                </h2>
-                <p className="tx-gray">
-                  Through a combination of lectures, readings, discussions,
-                  students will gain a solid foundation in educational
-                  psychology.
-                </p>
-                <ul>
-                  <li className="fw-bold mb-2">
-                    International course collection in 14 languages
-                  </li>
-                  <li className="fw-bold mb-2">
-                    Top certifications in tech and business
-                  </li>
-                  <li className="fw-bold mb-5">
-                    Access to 35,000+ top Eduan courses, anytime, anywhere
-                  </li>
-                </ul>
-                <Link
-                  className="btn bg-blue text-white fw-bold px-3 py-2 ms-3"
-                  to="/courses"
-                >
-                  More Details
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Learning />
       {/* <!-- Events --> */}
       <section className="pt-120 events f-courses bg-purple">
         <div className="container">
@@ -688,118 +222,10 @@ const Home = () => {
           </div>
 
           <div className="row row-cols-1 row-cols-lg-3 g-4">
-            <div className="col">
-              <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="/blog-details">
-                  <img
-                    src={images.pageOne.blogOne}
-                    className="card-img-top"
-                    alt="blog-img"
-                  />
-                </Link>
-                <div className="card-body p-4">
-                  <span className="pe-3 tx-gray">
-                    <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
-                    London, US
-                  </span>
-                  <span className="tx-gray">
-                    <i className="fa-regular fa-clock pe-2 tx-red"></i>8.00 am -
-                    6.00 pm
-                  </span>
-                  <h5 className="card-title mt-2 mb-4">
-                    <Link
-                      className="text-decoration-none tx-black fw-bold"
-                      to="/blog-details"
-                    >
-                      These are Designed to Provide Hands Training and
-                      Skill-Building.
-                    </Link>
-                  </h5>
-                  <Link
-                    to="/blog-details"
-                    className="btn border border-1 px-3 py-2 mb-4"
-                  >
-                    Get Ticket
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="/blog-details">
-                  <img
-                    src={images.pageOne.blogTwo}
-                    className="card-img-top"
-                    alt="blog-img"
-                  />
-                </Link>
-                <div className="card-body p-4">
-                  <span className="pe-3 tx-gray">
-                    <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
-                    London, US
-                  </span>
-                  <span className="tx-gray">
-                    <i className="fa-regular fa-clock pe-2 tx-red"></i>8.00 am -
-                    6.00 pm
-                  </span>
-                  <h5 className="card-title mt-2 mb-4">
-                    <Link
-                      className="text-decoration-none tx-black fw-bold"
-                      to="/blog-details"
-                    >
-                      Personalized Learning & Meeting The Needs of Every
-                      Student.
-                    </Link>
-                  </h5>
-                  <Link
-                    to="/blog-details"
-                    className="btn border border-1 px-3 py-2 mb-4"
-                  >
-                    Get Ticket
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius box-shadow p-3">
-                <Link to="/blog-details">
-                  <img
-                    src={images.pageOne.blogThree}
-                    className="card-img-top"
-                    alt="blog-img"
-                  />
-                </Link>
-                <div className="card-body p-4">
-                  <span className="pe-3 tx-gray">
-                    <i className="fa-solid fa-location-dot pe-2 tx-red"></i>
-                    London, US
-                  </span>
-                  <span className="tx-gray">
-                    <i className="fa-regular fa-clock pe-2 tx-red"></i>8.00 am -
-                    6.00 pm
-                  </span>
-                  <h5 className="card-title mt-2 mb-4">
-                    <Link
-                      className="text-decoration-none tx-black fw-bold"
-                      to="/blog-details"
-                    >
-                      The Whole Child Fostering Social and Emotional
-                      Development.
-                    </Link>
-                  </h5>
-                  <Link
-                    to="/blog-details"
-                    className="btn border border-1 px-3 py-2 mb-4"
-                  >
-                    Get Ticket
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <EventCard blog={false} />
           </div>
         </div>
       </section>
-
       {/* <!-- Reviews --> */}
       <section className="pt-120 blogs">
         <div className="container">
@@ -821,112 +247,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-              <div className="card bg-gray border-0 box-radius p-3">
-                <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
-                    <div className="d-flex justify-content-center align-items-center gap-3">
-                      <div>
-                        <img
-                          className="rounded-circle"
-                          src={images.pageOne.adminOne}
-                          alt="admin"
-                        />
-                      </div>
-                      <div>
-                        <p className="m-0 fw-bold tx-black">Brian Cumin</p>
-                        <p className="m-0 tx-gray">Indigo Violet</p>
-                      </div>
-                    </div>
-                    <div>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                    </div>
-                  </div>
-                  <p className="card-text">
-                    Lorem ipsum dolorArcu risus quis varius quam quisque id
-                    diam. mauris consectetur adipiscing elit, sed do eiusm
-                    commodo imperdiet.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card bg-gray border-0 box-radius p-3">
-                <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
-                    <div className="d-flex justify-content-center align-items-center gap-3">
-                      <div>
-                        <img
-                          className="rounded-circle"
-                          src={images.pageOne.adminTwo}
-                          alt="admin"
-                        />
-                      </div>
-                      <div>
-                        <p className="m-0 fw-bold tx-black">Penny Tool</p>
-                        <p className="m-0 tx-gray">Web Designer</p>
-                      </div>
-                    </div>
-                    <div>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                    </div>
-                  </div>
-                  <p className="card-text">
-                    Nunc valuate nil urn, id fermentum sem portico non volitant
-                    leafed lorem, quiz poseur ipsum aliquot a. Morbi urn unique
-                    ac herderite volutpatorca, pelletise in felis elemental
-                    fermentum lobotids effector mi. nula denim orca, so dales at
-                    ante dales ornate rises..
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card bg-gray border-0 box-radius p-3">
-                <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center gap-1 mb-5">
-                    <div className="d-flex justify-content-center align-items-center gap-3">
-                      <div>
-                        <img
-                          className="rounded-circle"
-                          src={images.pageOne.adminThree}
-                          alt="admin"
-                        />
-                      </div>
-                      <div>
-                        <p className="m-0 fw-bold tx-black">Brian Cumin</p>
-                        <p className="m-0 tx-gray">Indigo Violet</p>
-                      </div>
-                    </div>
-                    <div>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                      <i className="fa-solid fa-star tx-yellow"></i>
-                    </div>
-                  </div>
-                  <p className="card-text">
-                    Lorem ipsum dolorArcu risus quis varius quam quisque id
-                    diam. mauris consectetur adipiscing elit, sed do eiusm
-                    commodo imperdiet.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <ReviewCard />
           </div>
         </div>
       </section>
-
       {/* <!-- Blogs --> */}
       <section className="pt-120 blogs">
         <div className="container">
@@ -1066,6 +391,4 @@ const Home = () => {
       </section>
     </>
   );
-};
-
-export default Home;
+}
