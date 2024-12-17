@@ -3,8 +3,7 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
-
-const Contact = () => {
+export default function Contact() {
   return (
     <>
       <Helmet>
@@ -198,6 +197,4 @@ const Contact = () => {
       </main>
     </>
   );
-};
-
-export default Contact;
+}

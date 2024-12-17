@@ -3,8 +3,90 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
-
-const Courses = () => {
+import Card from "../../components/CoursesCard/Card.jsx";
+export default function Course() {
+  const courses = [
+    {
+      img: images.pageOne.courses.courseOne,
+      img_logo: images.pageOne.uniLogo.uniOne,
+      name: "University of London",
+      card_title: "The Complete JavaScript Course From Zero to Expert!",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseTwo,
+      img_logo: images.pageOne.uniLogo.uniTwo,
+      name: "Yale University",
+      card_title: "Online Courses Can Also Provide Access High-Quality",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseThree,
+      img_logo: images.pageOne.uniLogo.uniThree,
+      name: "University of London",
+      card_title: "Online Courses Can Also Provide Access High-Quality",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseFour,
+      img_logo: images.pageOne.uniLogo.uniFour,
+      name: "University of London",
+      card_title: "Learn how to start an amazon FBA store & analysis",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseFive,
+      img_logo: images.pageOne.uniLogo.uniFive,
+      name: "Yonsei University",
+      card_title: "Unity Medical Visualize Deployment and Usability",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseSix,
+      img_logo: images.pageOne.uniLogo.uniSix,
+      name: "University of London",
+      card_title: "The Complete JavaScript Course From Zero to Expert!",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseSeven,
+      img_logo: images.pageOne.uniLogo.uniSeven,
+      name: "University of London",
+      card_title: "The Complete JavaScript Course From Zero to Expert!",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+    {
+      img: images.pageOne.courses.courseEight,
+      img_logo: images.pageOne.uniLogo.uniEight,
+      name: "University of London",
+      card_title: "The Complete JavaScript Course From Zero to Expert!",
+      book: "23",
+      user: "50",
+      discount: "$130",
+      price: "$86",
+    },
+  ];
   return (
     <>
       <Helmet>
@@ -63,342 +145,19 @@ const Courses = () => {
           </div>
 
           <div className="row row-cols-1 row-cols-md-4 g-4 mb-5">
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseOne}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniOne}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseTwo}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniTwo}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">Yale University</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      Online Courses Can Also Provide Access High-Quality
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseThree}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniThree}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      className="text-decoration-none tx-black"
-                      to="/course-details"
-                    >
-                      Online Courses Can Also Provide Access High-Quality
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseFour}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniFour}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      Learn how to start an amazon FBA store & analysis
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseFive}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniFive}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">Yonsei University</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      Unity Medical Visualize Deployment and Usability
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseSix}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniSix}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseSeven}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniSeven}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 box-radius border-0 shadow-lg p-2">
-                <Link to="/course-details">
-                  <img
-                    src={images.pageOne.courses.courseEight}
-                    className="card-img-top"
-                    alt="course-img"
-                  />
-                </Link>
-                <div className="card-body">
-                  <div>
-                    <img
-                      src={images.pageOne.uniLogo.uniEight}
-                      alt="University logo"
-                    />
-                    <span className="tx-gray ps-3">University of London</span>
-                  </div>
-                  <h5 className="card-title fw-bold my-3">
-                    <Link
-                      to="/course-details"
-                      className="text-decoration-none tx-black"
-                    >
-                      The Complete JavaScript Course From Zero to Expert!
-                    </Link>
-                  </h5>
-                </div>
-                <div className="card-footer bg-white d-flex justify-content-between justify-content-center pt-3">
-                  <div className="tx-gray">
-                    <i className="fa-solid fa-book pe-2"></i>
-                    <span className="pe-3">23</span>
-                    <i className="fa-regular fa-user"></i>
-                    <span>50</span>
-                  </div>
-                  <div className="fw-bold tx-blue">
-                    <span className="text-decoration-line-through tx-gray pe-2">
-                      $130
-                    </span>
-                    $86
-                  </div>
-                </div>
-              </div>
-            </div>
+            {courses.map((course, index) => (
+              <Card
+                key={index}
+                img={course.img}
+                imgLogo={course.img_logo}
+                universityName={course.name}
+                title={course.card_title}
+                booksCount={course.book}
+                usersCount={course.user}
+                discountPrice={course.discount}
+                price={course.price}
+              />
+            ))}
           </div>
 
           <div className="row">
@@ -438,6 +197,4 @@ const Courses = () => {
       </section>
     </>
   );
-};
-
-export default Courses;
+}

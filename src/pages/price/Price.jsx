@@ -4,7 +4,7 @@ import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
 
-const Pricing = () => {
+export default function Price() {
   return (
     <>
       <Helmet>
@@ -163,6 +163,4 @@ const Pricing = () => {
       </section>
     </>
   );
-};
-
-export default Pricing;
+}

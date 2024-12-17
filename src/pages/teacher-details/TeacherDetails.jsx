@@ -4,7 +4,7 @@ import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
 
-const TeacherDetails = () => {
+export default function TeacherDetails() {
   return (
     <>
       <Helmet>
@@ -321,6 +321,4 @@ const TeacherDetails = () => {
       </section>
     </>
   );
-};
-
-export default TeacherDetails;
+}

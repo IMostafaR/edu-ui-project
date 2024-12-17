@@ -3,16 +3,68 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
-
-const Teacher = () => {
+import TeacherCard from "../../components/TeacherCard/TeacherCard.jsx";
+export default function Teachers() {
+  const teacher = [
+    {
+      img: images.teachers.teacherOne,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherTwo,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherThree,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherFour,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherFive,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherSix,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherSeven,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherEight,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherNine,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+    {
+      img: images.teachers.teacherTen,
+      name: "marvin mckinney",
+      jobTitle: "web designer",
+    },
+  ];
   return (
     <>
       <Helmet>
         <title>About</title>
       </Helmet>
-      ;{/* <!-- Header Banner --> */}
+      {/* <!-- Header Banner --> */}
       <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
-        <h1 className="fw-bold">Our Professor</h1>
+        <h1 className="fw-bold">About Us</h1>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb fw-bold">
             <li className="breadcrumb-item">
@@ -20,7 +72,7 @@ const Teacher = () => {
                 Home
               </Link>
             </li>
-            <li className="breadcrumb-item tx-blue">Our Professor</li>
+            <li className="breadcrumb-item tx-blue">About</li>
           </ol>
         </nav>
         <img
@@ -60,161 +112,17 @@ const Teacher = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherOne}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherTwo}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherThree}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherFour}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherFive}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherSix}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherSeven}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherEight}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherNine}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 align-items-stretch">
-              <div className="teacher-img box-radius position-relative">
-                <img
-                  className="w-100"
-                  src={images.teachers.teacherTen}
-                  alt="teacher profile img"
-                />
-                <Link to="/teacher-details" className="d-block">
-                  <div className="teacher-info position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-white fw-bold flex-column box-radius">
-                    <h3 className="mt-5 pt-5">marvin mckinney</h3>
-                    <p>web designer</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
+            {teacher.map((teacher, index) => (
+              <TeacherCard
+                key={index}
+                img={teacher.img}
+                name={teacher.name}
+                jobTitle={teacher.jobTitle}
+              />
+            ))}
           </div>
         </div>
       </section>
     </>
   );
-};
-
-export default Teacher;
+}

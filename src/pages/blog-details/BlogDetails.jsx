@@ -3,8 +3,7 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
-
-const BlogDetails = () => {
+export default function BlogDetails() {
   return (
     <>
       <Helmet>
@@ -223,8 +222,8 @@ const BlogDetails = () => {
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       <span>
-                        <i className="fa-solid fa-percent me-3 tx-blue"></i>Pass
-                        Percentage
+                        <i className="fa-solid fa-percent me-3 tx-blue"></i>
+                        Pass Percentage
                       </span>
                       <span>84%</span>
                     </li>
@@ -252,6 +251,4 @@ const BlogDetails = () => {
       </main>
     </>
   );
-};
-
-export default BlogDetails;
+}

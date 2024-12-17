@@ -4,7 +4,7 @@ import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
 
-const Signup = () => {
+export default function Signup() {
   return (
     <>
       <Helmet>
@@ -149,6 +149,4 @@ const Signup = () => {
       </div>
     </>
   );
-};
-
-export default Signup;
+}

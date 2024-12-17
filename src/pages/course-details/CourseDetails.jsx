@@ -4,7 +4,7 @@ import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
 
-const CourseDetails = () => {
+export default function CourseDetails() {
   return (
     <>
       <Helmet>
@@ -49,7 +49,7 @@ const CourseDetails = () => {
                   <div className="row col-lg-10 px-0">
                     <div className="col-lg-4 d-flex">
                       <div className="author-img">
-                        <img src={images.pageSix.authorOne} alt="" />
+                        <img src="./assets/images/page-3/author.jpg" alt="" />
                       </div>
                       <div className="author-info ps-2">
                         <span>Teacher</span>
@@ -252,6 +252,4 @@ const CourseDetails = () => {
       </main>
     </>
   );
-};
-
-export default CourseDetails;
+}
