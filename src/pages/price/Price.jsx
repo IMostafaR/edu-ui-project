@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
-import { images } from "../../assets/imgs/index.js";
+import Hero from "../../shared/hero/Hero.jsx";
 
 export default function Price() {
   return (
@@ -11,24 +11,7 @@ export default function Price() {
         <title>Pricing</title>
       </Helmet>
       {/* <!-- Header Banner --> */}
-      <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
-        <h1 className="fw-bold">Pricing</h1>
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb fw-bold">
-            <li className="breadcrumb-item">
-              <Link to="/" className="text-decoration-none tx-black">
-                Home
-              </Link>
-            </li>
-            <li className="breadcrumb-item tx-blue">Pricing</li>
-          </ol>
-        </nav>
-        <img
-          className="position-absolute"
-          src={images.pageTwo.star}
-          alt="star symbol"
-        />
-      </section>
+      <Hero pageName={"Pricing"} breadcrumb={"Pricing"} />
 
       {/* <!-- Price --> */}
 

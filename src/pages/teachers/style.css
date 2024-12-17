@@ -1,5 +1,5 @@
 .instructor {
-  background-image: url(../images/page-5/bg.jpg);
+  background-image: url(../../assets/imgs/page-5/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,4 +38,8 @@ section div.instructor img.position-absolute {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
+}
+
+.instructor a:hover {
+  background-color: var(--main-blue);
 }

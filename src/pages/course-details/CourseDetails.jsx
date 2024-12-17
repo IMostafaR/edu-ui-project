@@ -3,6 +3,7 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
+import Hero from "../../shared/hero/Hero.jsx";
 
 export default function CourseDetails() {
   return (
@@ -11,24 +12,10 @@ export default function CourseDetails() {
         <title>Course Details</title>
       </Helmet>
       {/* <!-- Header Banner --> */}
-      <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
-        <h1 className="fw-bold">Introduction to User Experience Design</h1>
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb fw-bold">
-            <li className="breadcrumb-item">
-              <Link to="/" className="text-decoration-none tx-black">
-                Home
-              </Link>
-            </li>
-            <li className="breadcrumb-item tx-blue">Course Details</li>
-          </ol>
-        </nav>
-        <img
-          className="position-absolute"
-          src={images.pageTwo.star}
-          alt="star symbol"
-        />
-      </section>
+      <Hero
+        pageName={"Introduction to User Experience Design"}
+        breadcrumb={"Course Details"}
+      />
 
       {/* <!-- Course-details --> */}
       <main className="course-details">
@@ -49,7 +36,7 @@ export default function CourseDetails() {
                   <div className="row col-lg-10 px-0">
                     <div className="col-lg-4 d-flex">
                       <div className="author-img">
-                        <img src="./assets/images/page-3/author.jpg" alt="" />
+                        <img src={images.pageSix.authorOne} alt="" />
                       </div>
                       <div className="author-info ps-2">
                         <span>Teacher</span>

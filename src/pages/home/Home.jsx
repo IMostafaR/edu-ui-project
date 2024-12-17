@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { images } from "../../assets/imgs/index.js";
 import "./style.css";
 import { Helmet } from "react-helmet";
-import Blogs from "../../components/Blogs/Blogs.jsx";
-import Reviews from "../../components/Reviews/Reviews.jsx";
-import Events from "../../components/Events/Events.jsx";
-import Learning from "../../components/learning/learning.jsx";
-import FeaturedCourses from "../../components/featuredCourses/FeaturedCourses.jsx";
+import Learning from "../../shared/Learning/learning.jsx";
+import FeaturedCourses from "../../shared/FeaturedCourses/FeaturedCourses.jsx";
+import ReviewCard from "../../components/ReviewCard/ReviewCard.jsx";
+import CategoryCard from "../../components/CategoryCard/CategoryCard.jsx";
+import EventCard from "../../components/EventAndBlogCard/EventAndBlogCard.jsx";
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
       <Helmet>
         <title>Home</title>
       </Helmet>
-
       {/* home banner */}
       <section className="home-banner bg-light-blue rounded-5">
         <div className="container pt-5">
@@ -123,105 +122,273 @@ export default function Home() {
             </div>
             <div className="col-lg-9">
               <div className="row row-cols-1 row-cols-md-4 g-4">
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryOne}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Digital Marketing</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        26 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryTwo}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Graphic Design</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        78 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryThree}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">Web Design</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        15 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg col-md-6 col-12">
-                  <div className="card h-100 box-radius shadow-lg border-0">
-                    <Link to="/courses">
-                      <img
-                        src={images.pageOne.categoryFour}
-                        className="card-img-top"
-                        alt="category img"
-                      />
-                    </Link>
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">IT & Software</h5>
-                      <Link
-                        to="/courses"
-                        className="card-text text-decoration-none tx-gray"
-                      >
-                        26 Items
-                        <i className="fa-solid fa-arrow-right tx-gray ps-2"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+                <CategoryCard />
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* <!-- Featured Courses --> */}
-      <FeaturedCourses />
+      <section className="pt-120 f-courses bg-purple">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="title d-flex flex-column align-items-center">
+                <span className="f-courses bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
+                  Featured Courses
+                </span>
+                <h1 className="tx-black fw-bold mb-5">
+                  Explore Featured Courses
+                </h1>
+              </div>
+              <div className="card text-center mb-5 w-50 m-auto rounded-5">
+                <div className="">
+                  <ul className="nav nav-tabs card-header-tabs p-2 d-flex justify-content-between">
+                    <li className="nav-item">
+                      <Link
+                        className="text-decoration-none btn bg-blue text-white px-4 rounded-5 mb-2 ms-2"
+                        to="#"
+                      >
+                        See All
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
+                        to="#"
+                      >
+                        Trending
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
+                        to="#"
+                      >
+                        Featured
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2"
+                        to="#"
+                      >
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="text-decoration-none btn btn-outline-primary border-0 tx-gray px-4 rounded-5 mb-2 ms-2 me-2"
+                        to="#"
+                      >
+                        Popular
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <FeaturedCourses className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" />
+        </div>
+      </section>
       {/* <!-- Start learning Free --> */}
       <Learning />
       {/* <!-- Events --> */}
-      <Events />
+      <section className="pt-120 events f-courses bg-purple">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="d-flex justify-content-between gap-2 align-content-center">
+                <div>
+                  <span className="events bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
+                    Conference on Education
+                  </span>
+                  <h1 className="fw-bold tx-black mb-5">Upcoming Events</h1>
+                </div>
+                <div className="d-flex justify-content-start gap-2 align-items-center">
+                  <i
+                    className="fa-solid fa-arrow-left border rounded-circle shadow-lg tx-gray p-3"
+                    role="button"
+                  ></i>
+                  <i
+                    className="fa-solid fa-arrow-right border rounded-circle shadow-lg tx-gray p-3"
+                    role="button"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row row-cols-1 row-cols-lg-3 g-4">
+            <EventCard blog={false} />
+          </div>
+        </div>
+      </section>
       {/* <!-- Reviews --> */}
-      <Reviews />
+      <section className="pt-120 blogs">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="title d-flex flex-column align-items-center mb-5">
+                <span className="our-blog bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
+                  Student Reviews
+                </span>
+                <h2 className="tx-black fw-bold mb-5">
+                  What Our Students Saying
+                </h2>
+                <p className="tx-gray w-50 text-center">
+                  Through a combination of lectures, readings, discussions,
+                  students will gain a solid foundation in educational
+                  psychology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <ReviewCard />
+          </div>
+        </div>
+      </section>
       {/* <!-- Blogs --> */}
-      <Blogs />
+      <section className="pt-120 blogs">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="title d-flex flex-column align-items-center mb-5">
+                <span className="our-blog bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
+                  Our Blog
+                </span>
+                <h2 className="tx-black fw-bold mb-5">Our Latest Articles</h2>
+                <p className="tx-gray w-50 text-center">
+                  Through a combination of lectures, readings, discussions,
+                  students will gain a solid foundation in educational
+                  psychology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-8">
+              <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
+                <div className="row g-4 align-items-center">
+                  <div className="col-md-4">
+                    <Link to="/blog-details">
+                      <img
+                        src={images.pageOne.blogFour}
+                        className="img-fluid rounded w-100"
+                        alt="blog-img"
+                      />
+                    </Link>
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span className="pe-3 tx-gray">
+                        <i className="fa-regular fa-user pe-2 tx-red"></i>Admin
+                      </span>
+                      <span className="tx-gray">
+                        <i className="fa-regular fa-clock pe-2 tx-red"></i>June
+                        23, 2023
+                      </span>
+                      <h5 className="card-title mt-2 mb-4">
+                        <Link
+                          className="text-decoration-none tx-black fw-bold"
+                          to="/blog-details"
+                        >
+                          Nothing is Impossible to Learn If you are Passionate
+                          About this Subject
+                        </Link>
+                      </h5>
+                      <Link
+                        to="/blog-details"
+                        className="btn border border-1 px-3 py-2 mb-4"
+                      >
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 p-2 box-shadow align-items-stretch box-radius border-0">
+                <div className="row g-4 align-items-center">
+                  <div className="col-md-4">
+                    <Link to="/blog-details">
+                      <img
+                        src={images.pageOne.blogFive}
+                        className="img-fluid rounded w-100"
+                        alt="blog-img"
+                      />
+                    </Link>
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span className="pe-3 tx-gray">
+                        <i className="fa-regular fa-user pe-2 tx-red"></i>Admin
+                      </span>
+                      <span className="tx-gray">
+                        <i className="fa-regular fa-clock pe-2 tx-red"></i>June
+                        23, 2023
+                      </span>
+                      <h5 className="card-title mt-2 mb-4">
+                        <Link
+                          className="text-decoration-none tx-black fw-bold"
+                          to="/blog-details"
+                        >
+                          Nothing is Impossible to Learn If you are Passionate
+                          About this Subject
+                        </Link>
+                      </h5>
+                      <Link
+                        to="/blog-details"
+                        className="btn border border-1 px-3 py-2 mb-4"
+                      >
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="card h-100 box-radius box-shadow border-0">
+                <Link to="/blog-details">
+                  <img
+                    src={images.pageOne.blogSix}
+                    className="card-img-top"
+                    alt="blog-img"
+                  />
+                </Link>
+                <div className="card-body p-4">
+                  <span className="pe-3 tx-gray">
+                    <i className="fa-regular fa-user pe-2 tx-red"></i>Admin
+                  </span>
+                  <span className="tx-gray">
+                    <i className="fa-regular fa-clock pe-2 tx-red"></i>June 23,
+                    2023
+                  </span>
+                  <h5 className="card-title mt-2 mb-3">
+                    <Link
+                      className="text-decoration-none tx-black fw-bold"
+                      to="/blog-details"
+                    >
+                      Education Week News and Views on Education Policy and
+                      Practice.
+                    </Link>
+                  </h5>
+                  <Link
+                    to="/blog-details"
+                    className="btn border border-1 px-3 py-2"
+                  >
+                    Read more
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

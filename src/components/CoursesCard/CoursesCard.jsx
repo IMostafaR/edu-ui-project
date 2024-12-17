@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function Card({
   img,
@@ -48,3 +49,14 @@ export default function Card({
     </div>
   );
 }
+
+Card.propTypes = {
+  img: PropTypes.string,
+  imgLogo: PropTypes.string,
+  universityName: PropTypes.string,
+  title: PropTypes.string,
+  booksCount: PropTypes.string,
+  usersCount: PropTypes.string,
+  discountPrice: PropTypes.string,
+  price: PropTypes.string,
+};

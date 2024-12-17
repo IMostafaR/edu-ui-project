@@ -3,6 +3,7 @@ import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import { images } from "../../assets/imgs/index.js";
+import Hero from "../../shared/hero/Hero.jsx";
 
 export default function TeacherDetails() {
   return (
@@ -11,24 +12,7 @@ export default function TeacherDetails() {
         <title>Teacher Details</title>
       </Helmet>
       {/* <!-- Header Banner --> */}
-      <section className="header-banner d-flex flex-column justify-content-center align-items-center position-relative">
-        <h1 className="fw-bold">Our Professor</h1>
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb fw-bold">
-            <li className="breadcrumb-item">
-              <Link to="/" className="text-decoration-none tx-black">
-                Home
-              </Link>
-            </li>
-            <li className="breadcrumb-item tx-blue">Our Professor</li>
-          </ol>
-        </nav>
-        <img
-          className="position-absolute"
-          src={images.pageTwo.star}
-          alt="star symbol"
-        />
-      </section>
+      <Hero pageName={"Our Professor"} breadcrumb={"Our Professor"} />
 
       {/* <!-- Teacher Details --> */}
       <section className="container pt-120">

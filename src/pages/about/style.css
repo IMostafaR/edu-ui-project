@@ -12,12 +12,13 @@
   border-left: 3px solid var(--main-red);
 }
 
-.learning a:hover {
+.learning a:hover,
+.instructor a:hover {
   background-color: var(--main-blue);
 }
 
 .instructor {
-  background-image: url(../images/page-5/bg.jpg);
+  background-image: url(../../assets/imgs/page-5/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
