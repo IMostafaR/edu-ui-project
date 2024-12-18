@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import FeaturedCourses from "../../shared/FeaturedCourses/FeaturedCourses.jsx";
 import Hero from "../../shared/hero/Hero.jsx";
+import Pagination from "../../components/Pagination/Pagination.jsx";
 
 export default function Course() {
   return (
@@ -48,39 +48,7 @@ export default function Course() {
 
           <FeaturedCourses className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5" />
 
-          <div className="row">
-            <div className="col">
-              <nav aria-label="Page navigation example">
-                <ul className="pagination">
-                  <li className="page-item">
-                    <Link className="page-link tx-gray" to="#">
-                      Previous
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link tx-gray" to="#">
-                      1
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link tx-gray" to="#">
-                      2
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link tx-gray" to="#">
-                      3
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link tx-gray" to="#">
-                      Next
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+          <Pagination />
         </div>
       </section>
     </>
