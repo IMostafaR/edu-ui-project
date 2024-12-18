@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../pages/about/style.css";
 import { images } from "../../assets/imgs/index.js";
+import Badge from "../../components/Badge/Badge.jsx";
 
 export default function Learning() {
   return (
@@ -18,9 +19,7 @@ export default function Learning() {
           </div>
           <div className="col-lg-6">
             <div className="mt-5">
-              <span className="bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block free">
-                Download App
-              </span>
+              <Badge className={"free"} text={"Download App"} />
               <h2 className="fw-bold tx-black fs-1">
                 Online Course can be Tailored to Need of learners
               </h2>

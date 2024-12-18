@@ -1,6 +1,7 @@
 import "./style.css";
 import { images } from "../../assets/imgs/index.js";
 import { Link } from "react-router-dom";
+import Badge from "../../components/Badge/Badge.jsx";
 
 const Footer = () => {
   return (
@@ -11,9 +12,7 @@ const Footer = () => {
             <div className="row align-items-center gx-5 px-5">
               <div className="col-lg-6">
                 <div>
-                  <span className="bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                    Download App
-                  </span>
+                  <Badge className={"free"} text={"Download App"} />
                   <h2 className="fw-bold text-white fs-1">
                     Are you Ready to Start your Online Course?
                   </h2>

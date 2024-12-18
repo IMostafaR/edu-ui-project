@@ -7,6 +7,7 @@ import FeaturedCourses from "../../shared/FeaturedCourses/FeaturedCourses.jsx";
 import ReviewCard from "../../components/ReviewCard/ReviewCard.jsx";
 import CategoryCard from "../../components/CategoryCard/CategoryCard.jsx";
 import EventCard from "../../components/EventAndBlogCard/EventAndBlogCard.jsx";
+import Badge from "../../components/Badge/Badge.jsx";
 
 export default function Home() {
   return (
@@ -20,9 +21,7 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="content mb-5 mb-lg-auto">
-                <span className="bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                  Online Learning Platform
-                </span>
+                <Badge text={"Online Learning Platform"} />
                 <h1 className="fw-bold tx-black">
                   Master The Skills Drive Your Career.
                 </h1>
@@ -105,9 +104,7 @@ export default function Home() {
 
           <div className="categories row align-items-center pt-120">
             <div className="col-lg-3 mb-5 mb-lg-0">
-              <span className="bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                Browse Categories
-              </span>
+              <Badge text={"Browse Categories"} />
               <h1 className="fw-bold tx-black mb-4">Popular Categories</h1>
               <div className="d-flex justify-content-start gap-2">
                 <i
@@ -134,9 +131,7 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <div className="title d-flex flex-column align-items-center">
-                <span className="f-courses bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                  Featured Courses
-                </span>
+                <Badge className={"f-courses"} text={"Featured Courses"} />
                 <h1 className="tx-black fw-bold mb-5">
                   Explore Featured Courses
                 </h1>
@@ -202,9 +197,10 @@ export default function Home() {
             <div className="col">
               <div className="d-flex justify-content-between gap-2 align-content-center">
                 <div>
-                  <span className="events bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                    Conference on Education
-                  </span>
+                  <Badge
+                    className={"events"}
+                    text={"Conference on Education"}
+                  />
                   <h1 className="fw-bold tx-black mb-5">Upcoming Events</h1>
                 </div>
                 <div className="d-flex justify-content-start gap-2 align-items-center">
@@ -232,9 +228,7 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <div className="title d-flex flex-column align-items-center mb-5">
-                <span className="our-blog bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                  Student Reviews
-                </span>
+                <Badge className={"our-blog"} text={"Student Reviews"} />
                 <h2 className="tx-black fw-bold mb-5">
                   What Our Students Saying
                 </h2>
@@ -258,9 +252,7 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <div className="title d-flex flex-column align-items-center mb-5">
-                <span className="our-blog bg-light-red py-1 px-4 tx-red fw-bold mb-3 d-inline-block">
-                  Our Blog
-                </span>
+                <Badge className={"our-blog"} text={"Our Blog"} />
                 <h2 className="tx-black fw-bold mb-5">Our Latest Articles</h2>
                 <p className="tx-gray w-50 text-center">
                   Through a combination of lectures, readings, discussions,
