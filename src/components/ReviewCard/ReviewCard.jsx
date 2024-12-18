@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { images } from "../../assets/imgs/index.js";
 
 export default function ReviewCard() {
@@ -61,12 +60,3 @@ export default function ReviewCard() {
     </>
   );
 }
-
-ReviewCard.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  designation: PropTypes.string.isRequired,
-  review: PropTypes.string.isRequired,
-};
-
-// export default ReviewCard;

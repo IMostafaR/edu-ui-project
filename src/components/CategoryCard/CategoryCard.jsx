@@ -6,22 +6,22 @@ const CategoryCard = () => {
     {
       img: images.pageOne.categoryOne,
       title: "Digital Marketing",
-      itemsCount: "26 Items",
+      itemsCount: "26",
     },
     {
       img: images.pageOne.categoryTwo,
       title: "Graphic Design",
-      itemsCount: "78 Items",
+      itemsCount: "78",
     },
     {
       img: images.pageOne.categoryThree,
       title: "Web Design",
-      itemsCount: "15 Items",
+      itemsCount: "15",
     },
     {
       img: images.pageOne.categoryFour,
       title: "IT & Software",
-      itemsCount: "26 Items",
+      itemsCount: "26",
     },
   ];
 
