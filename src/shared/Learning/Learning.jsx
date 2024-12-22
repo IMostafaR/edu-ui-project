@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../pages/about/style.css";
 import { images } from "../../assets/imgs/index.js";
-import Badge from "../../components/Badge/Badge.jsx";
+import Badge from "../../shared/Badge/Badge.jsx";
 
 export default function Learning() {
   return (

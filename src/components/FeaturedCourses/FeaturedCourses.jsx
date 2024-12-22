@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
-import Card from "../../components/CoursesCard/CoursesCard.jsx";
-import { images } from "../../assets/imgs/index.js";
+import Card from "./../../shared/CoursesCard/CoursesCard.jsx";
+import { images } from "./../../assets/imgs/index.js";
 import PropTypes from "prop-types";
 
 export default function FeaturedCourses({ className = "" }) {

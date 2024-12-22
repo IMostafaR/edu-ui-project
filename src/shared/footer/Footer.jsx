@@ -1,7 +1,7 @@
 import "./style.css";
 import { images } from "../../assets/imgs/index.js";
 import { Link } from "react-router-dom";
-import Badge from "../../components/Badge/Badge.jsx";
+import Badge from "../../shared/Badge/Badge.jsx";
 
 const Footer = () => {
   return (
