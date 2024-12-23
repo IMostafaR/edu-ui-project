@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "../../shared/hero/style.css";
 
-export default function PriceComponent() {
+export default function Pricing() {
   return (
     <>
-     <section className="pt-120 price">
+      <section className="pt-120 price">
         <div className="container">
           <div className="row text-center g-5">
             <div className="col-md-4">

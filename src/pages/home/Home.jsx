@@ -1,13 +1,6 @@
-import { Link } from "react-router-dom";
-import { images } from "../../assets/imgs/index.js";
 import "./style.css";
 import { Helmet } from "react-helmet";
 import Learning from "../../shared/Learning/learning.jsx";
-import FeaturedCourses from "../../components/FeaturedCourses/FeaturedCourses.jsx";
-import ReviewCard from "../../shared/ReviewCard/ReviewCard.jsx";
-import CategoryCard from "../../shared/CategoryCard/CategoryCard.jsx";
-import EventCard from "../../shared/EventAndBlogCard/EventAndBlogCard.jsx";
-import Badge from "../../shared/Badge/Badge.jsx";
 import HomeBanner from "../../components/HomeBanner/HomeBanner.jsx";
 import PopularCategories from "../../components/PopularCategories/PopularCategories.jsx";
 import HomeFeaturedCourses from "../../components/HomeFeaturedCourses/HomeFeaturedCourses.jsx";
@@ -22,20 +15,20 @@ export default function Home() {
         <title>Home</title>
       </Helmet>
       {/* home banner */}
-      <HomeBanner/>
+      <HomeBanner />
 
       {/* <!-- Popular Categories --> */}
-      <PopularCategories/>
+      <PopularCategories />
       {/* <!-- Featured Courses --> */}
-      <HomeFeaturedCourses/>
+      <HomeFeaturedCourses />
       {/* <!-- Start learning Free --> */}
       <Learning />
       {/* <!-- Events --> */}
-      <HomeEvents/>
+      <HomeEvents />
       {/* <!-- Reviews --> */}
-      <HomeReviews/>
+      <HomeReviews />
       {/* <!-- Blogs --> */}
-      <HomeBlogs/>
+      <HomeBlogs />
     </>
   );
 }

@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
-import { images } from "../../assets/imgs/index.js";
 import Hero from "../../shared/hero/Hero.jsx";
-import TeacherDetailsComponent from "../../components/TeacherDetailsComponent/TeacherDetailsComponent.jsx";
+import TeacherInfo from "../../components/TeacherInfo/TeacherInfo.jsx";
 
 export default function TeacherDetails() {
   return (
@@ -16,7 +14,7 @@ export default function TeacherDetails() {
       <Hero pageName={"Our Professor"} breadcrumb={"Our Professor"} />
 
       {/* <!-- Teacher Details --> */}
-      <TeacherDetailsComponent/>
+      <TeacherInfo />
     </>
   );
 }

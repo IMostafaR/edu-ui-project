@@ -1,12 +1,11 @@
-
 import { Link } from "react-router-dom";
 import "../../shared/hero/style.css";
 import { images } from "../../assets/imgs/index.js";
 
-export default function TeacherDetailsComponent() {
+export default function TeacherInfo() {
   return (
     <>
-     <section className="container pt-120">
+      <section className="container pt-120">
         <div className="teacher-details d-flex gap-3 mt-5">
           <div className="image">
             <img src={images.teachers.teacherOne} alt="" />

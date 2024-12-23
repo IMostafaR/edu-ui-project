@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
-import { images } from "../../assets/imgs/index.js";
 import Hero from "../../shared/hero/Hero.jsx";
-import Details from "../../components/Details/Details.jsx";
+import BlogInfo from "../../components/BlogInfo/BlogInfo.jsx";
 
 export default function BlogDetails() {
   return (
@@ -16,8 +14,7 @@ export default function BlogDetails() {
       <Hero pageName={"Blog Details"} breadcrumb={"Blog Details"} />
 
       {/* <!-- blog-details --> */}
-      <Details/>
-      
+      <BlogInfo />
     </>
   );
 }

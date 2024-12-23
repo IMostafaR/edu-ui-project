@@ -3,12 +3,10 @@ import "../../shared/hero/style.css";
 import { images } from "../../assets/imgs/index.js";
 import TeacherCard from "../../shared/TeacherCard/TeacherCard.jsx";
 
-
-export default function Teachers(){
-
-    return(
-        <>
-        <section className="pt-120">
+export default function AllTeachers() {
+  return (
+    <>
+      <section className="pt-120">
         <div className="container">
           <div className="row g-3 mb-5">
             <div className="col-xl-6 col-lg-8 col-md-12 align-items-stretch">
@@ -36,11 +34,10 @@ export default function Teachers(){
                 </div>
               </div>
             </div>
-            <TeacherCard />
+            <TeacherCard showAll={true} />
           </div>
         </div>
       </section>
     </>
-    )
+  );
 }
-

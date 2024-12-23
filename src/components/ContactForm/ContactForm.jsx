@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import "../../shared/hero/style.css";
 
-
-export default function ContactDetails(){
-
-    return(
-        <>
-     <main className="contact">
+export default function ContactForm() {
+  return (
+    <>
+      <main className="contact pt-120">
         <div className="container mt-5">
-          <div className="contact-body">
+          <div className="contact-body box-radius">
             <div className="row main-white box-radius">
               <div className="contact-content col-lg-8 col-md-8">
                 <div className="col-lg-10">
@@ -171,6 +169,5 @@ export default function ContactDetails(){
         </div>
       </main>
     </>
-    )
+  );
 }
-

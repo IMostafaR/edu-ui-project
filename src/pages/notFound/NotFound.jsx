@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import { images } from "../../assets/imgs/index.js";
-import NotFoundComponent from "../../components/NotFoundComponent/NotFoundComponent.jsx";
+import Error from "../../components/Error/Error.jsx";
 
 const NotFound = () => {
   return (
@@ -8,7 +7,7 @@ const NotFound = () => {
       <Helmet>
         <title>Page Not Found!</title>
       </Helmet>
-      <NotFoundComponent/>
+      <Error />
     </>
   );
 };

@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
 import Hero from "../../shared/hero/Hero.jsx";
-import ContactDetails from "../../components/ContactDetails/ContactDetails.jsx";
+import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 
 export default function Contact() {
   return (
@@ -15,8 +14,7 @@ export default function Contact() {
       <Hero pageName={"Contact Us"} breadcrumb={"Contact Us"} />
 
       {/* <!-- ------------------------- --> */}
-
-      <ContactDetails/>
+      <ContactForm />
     </>
   );
 }

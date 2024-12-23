@@ -1,10 +1,9 @@
-
 import { images } from "../../assets/imgs/index.js";
 
-const NotFoundComponent = () => {
+const Error = () => {
   return (
     <>
-   <section className="d-flex flex-column my-5 pt-120">
+      <section className="d-flex flex-column my-5 pt-120">
         <h1 className="text-center text-main fw-bolder mb-3">
           OOPS ! Page Not Found
         </h1>
@@ -18,4 +17,4 @@ const NotFoundComponent = () => {
   );
 };
 
-export default NotFoundComponent;
+export default Error;

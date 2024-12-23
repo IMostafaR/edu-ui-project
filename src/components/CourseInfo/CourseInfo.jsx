@@ -1,14 +1,11 @@
-
 import { Link } from "react-router-dom";
 import "../../shared/hero/style.css";
 import { images } from "../../assets/imgs/index.js";
 
-
-export default function Details(){
-
-    return(
-        <>
-       <main className="course-details">
+export default function CourseInfo() {
+  return (
+    <>
+      <main className="course-details pt-120">
         <div className="container mt-5">
           <div className="course_Img position-relative">
             <img
@@ -26,7 +23,7 @@ export default function Details(){
                   <div className="row col-lg-10 px-0">
                     <div className="col-lg-4 d-flex">
                       <div className="author-img">
-                        <img src="./assets/images/page-3/author.jpg" alt="" />
+                        <img src={images.pageSix.authorOne} alt="" />
                       </div>
                       <div className="author-info ps-2">
                         <span>Teacher</span>
@@ -200,8 +197,8 @@ export default function Details(){
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       <span>
-                        <i className="fa-solid fa-percent me-3 tx-blue"></i>
-                        Pass Percentage
+                        <i className="fa-solid fa-percent me-3 tx-blue"></i>Pass
+                        Percentage
                       </span>
                       <span>84%</span>
                     </li>
@@ -228,6 +225,5 @@ export default function Details(){
         </div>
       </main>
     </>
-    )
+  );
 }
-

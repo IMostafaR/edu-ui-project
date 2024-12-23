@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import "../../shared/hero/style.css";
 import { images } from "../../assets/imgs/index.js";
 
-export default function SignUpComponent() {
+export default function SignupForm() {
   return (
     <>
- <div className="form-container">
+      <div className="form-container">
         <div className="tabs">
           <div className="tab-link active" id="tab-signup">
             Sign Up
@@ -120,7 +120,6 @@ export default function SignUpComponent() {
           </div>
         </form>
       </div>
-
-  </>
+    </>
   );
 }
