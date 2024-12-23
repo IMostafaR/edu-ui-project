@@ -1,10 +1,10 @@
 import "./style.css";
 import "../../shared/hero/style.css";
 import { Helmet } from "react-helmet";
-import FeaturedCourses from "../../shared/FeaturedCourses/FeaturedCourses.jsx";
+import FeaturedCourses from "../../components/FeaturedCourses/FeaturedCourses.jsx";
 import Hero from "../../shared/hero/Hero.jsx";
-import Pagination from "../../components/Pagination/Pagination.jsx";
-import Search from "../../components/Search/Search.jsx";
+import Pagination from "../../shared/Pagination/Pagination.jsx";
+import Search from "../../shared/Search/Search.jsx";
 
 export default function Course() {
   return (
