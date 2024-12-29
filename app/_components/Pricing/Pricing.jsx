@@ -1,0 +1,138 @@
+import Link from "next/link";
+import "../../shared/hero/style.css";
+
+export default function Pricing() {
+  return (
+    <>
+      <section className="pt-120 price">
+        <div className="container">
+          <div className="row text-center g-5">
+            <div className="col-md-4">
+              <div className="box card border-0 p-5 bg-gray box-radius ">
+                <h4 className="card-title">Standard</h4>
+                <p className="text-muted">
+                  <s>$24.00</s>
+                </p>
+                <div className="pricing d-flex justify-content-center gap-2 align-items-end">
+                  <h2 className="fw-bold">$22</h2>
+                  <p className="text-start fw-bold">
+                    Per <br />
+                    Month
+                  </p>
+                </div>
+
+                <p className="text-muted">
+                  Discounted Price For USA <br />
+                  Per User, billed annually
+                </p>
+                <Link
+                  href="/signup"
+                  className="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+                >
+                  Enroll Now
+                </Link>
+                <p className="mt-2">
+                  <Link href="#" className="tx-black me-2">
+                    Choose 2 - year plan
+                  </Link>
+                  <span className="badge bg-danger-subtle tx-red border-1 border px-2 p-1">
+                    Save 6%
+                  </span>
+                </p>
+                <ul className="list-unstyled text-start mt-3 text-muted">
+                  <li>&bull; Facilizes sed odic morbid quiz.</li>
+                  <li>&bull; Design nexus et malasadas fames brand.</li>
+                  <li>&bull; Artistic mind will be great for creation.</li>
+                  <li>&bull; Roadmap for business agency arbitrator.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box card p-5 border-0 position-relative bg-gray box-radius ">
+                <h4 className="card-title">
+                  Professional
+                  <span className="badge bg-danger position-absolute top-0 end-0 px-3 py-2 rounded-0 rounded-top-1 fs-6">
+                    Most Popular
+                  </span>
+                </h4>
+                <p className="text-muted">
+                  <s>$36.00</s>
+                </p>
+                <div className="pricing d-flex justify-content-center gap-2 align-items-end">
+                  <h2 className="fw-bold">$22</h2>
+                  <p className="text-start fw-bold">
+                    Per <br />
+                    Month
+                  </p>
+                </div>
+                <p className="text-muted">
+                  Discounted Price For USA <br />
+                  Per User, billed annually
+                </p>
+                <Link
+                  href="/signup"
+                  className="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+                >
+                  Enroll Now
+                </Link>
+                <p className="mt-2">
+                  <Link href="#" className="tx-black me-2">
+                    Choose 2 - year plan
+                  </Link>
+                  <span className="badge bg-danger-subtle tx-red border-1 border px-2 p-1">
+                    Save 24%
+                  </span>
+                </p>
+                <ul className="list-unstyled text-start mt-3 text-muted">
+                  <li>&bull; Facilizes sed odic morbid quiz.</li>
+                  <li>&bull; Design nexus et malasadas fames brand.</li>
+                  <li>&bull; Artistic mind will be great for creation.</li>
+                  <li>&bull; Roadmap for business agency arbitrator.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box card border-0 p-5 bg-gray box-radius ">
+                <h4 className="card-title">Business</h4>
+                <p className="text-muted">
+                  <s>$74.00</s>
+                </p>
+                <div className="pricing d-flex justify-content-center gap-2 align-items-end">
+                  <h2 className="fw-bold">$22</h2>
+                  <p className="text-start fw-bold">
+                    Per <br />
+                    Month
+                  </p>
+                </div>
+                <p className="text-muted">
+                  Discounted Price For USA <br />
+                  Per User, billed annually
+                </p>
+                <Link
+                  href="/signup"
+                  className="btn border border-2 py-2 fw-bold mb-3 border-light-subtle"
+                >
+                  Enroll Now
+                </Link>
+                <p className="mt-2">
+                  <Link href="#" className="tx-black me-2">
+                    Choose 2 - year plan
+                  </Link>
+                  <span className="badge bg-danger-subtle tx-red border-1 border px-2 p-1">
+                    Save 12%
+                  </span>
+                </p>
+                <ul className="list-unstyled text-start mt-3 text-muted">
+                  <li>&bull; Facilizes sed odic morbid quiz.</li>
+                  <li>&bull; Design nexus et malasadas fames brand.</li>
+                  <li>&bull; Artistic mind will be great for creation.</li>
+                  <li>&bull; Roadmap for business agency arbitrator.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

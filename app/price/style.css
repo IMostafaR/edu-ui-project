@@ -1,0 +1,29 @@
+.card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.text-muted s {
+  color: #aaa;
+}
+
+.badge {
+  font-size: 12px;
+}
+
+section.price a:hover {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.pricing h2 {
+  font-size: 3rem;
+}
+
+.pricing p {
+  line-height: normal;
+  font-size: 1rem;
+}
